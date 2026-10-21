@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Splash Transition</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style type="text/tailwindcss">
+    @keyframes panelExit {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(100%);
+      }
+    }
+
+    @keyframes loadingExit {
+      to {
+        opacity: 0;
+      }
+    }
+
+    @theme {
+      --color-splash: #3F0D12;
+      --color-splash-middle: #20573d;
+      --color-splash-dark: #123d2b;
+      --color-paper: #F1F0CC;
+
+      --animate-panel-exit: panelExit 0.9s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+      --animate-loading-exit: loadingExit 0.25s ease forwards;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #transition.exit .panel {
+        animation-duration: 0.01ms;
+        animation-delay: 0ms;
+      }
+    }
+  </style>
+</head>
+
+<body class="m-0 min-h-screen overflow-hidden bg-paper font-sans">
+
+  <!-- SPLASH TRANSITION -->
+  <div id="transition" class="fixed inset-0 z-9999 flex flex-col overflow-hidden">
+
+    <!-- Panel 1 -->
+    <div class="panel relative h-1/3 w-full shrink-0 bg-splash translate-x-0"></div>
+
+    <!-- Panel 2 -->
+    <div class="panel relative h-1/3 w-full shrink-0 bg-splash translate-x-0"></div>
+
+    <!-- Panel 3 -->
+    <div class="panel relative h-1/3 w-full shrink-0 bg-splash translate-x-0"></div>
+
+    <!-- LOADING COUNTER -->
+    <div id="loading"
+      class="pointer-events-none absolute inset-0 z-10 flex flex-col items-center justify-center text-paper">
+
+      <div id="percentage" class="flex items-start text-6xl leading-none font-bold tracking-[-0.08em] tabular-nums">
+        <span id="number">0</span>
+        <span class="mt-1 ml-2 text-[0.25em] tracking-normal">%</span>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="mt-7 h-0.5 w-[10vw] overflow-hidden bg-paper/25">
+        <div id="progress-bar" class="h-full w-0 bg-paper transition-[width] duration-80 ease-linear"></div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script>
+    const transition = document.getElementById("transition");
+    const number = document.getElementById("number");
+    const progressBar = document.getElementById("progress-bar");
+
+    const panels = transition.querySelectorAll(".panel");
+    const lastPanel = panels[panels.length - 1];
+
+    const loadingDuration = 2500;
+    let startTime;
+
+    // Mulai loading
+    function startLoading() {
+      startTime = performance.now();
+      requestAnimationFrame(updateLoading);
+    }
+
+    // Hitung persentase dari 0 hingga 100
+    function updateLoading(currentTime) {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / loadingDuration, 1);
+
+      // Efek easing
+      const easedProgress = 1 - Math.pow(1 - progress, 3);
+      const percentage = Math.floor(easedProgress * 100);
+
+      number.textContent = percentage;
+      progressBar.style.width = percentage + "%";
+
+      if (progress < 1) {
+        requestAnimationFrame(updateLoading);
+      } else {
+        number.textContent = "100";
+        progressBar.style.width = "100%";
+
+        // Mulai animasi keluar
+        setTimeout(() => {
+          transition.classList.add("exit");
+
+          transition.querySelectorAll(".panel").forEach((panel, index) => {
+            panel.style.animation =
+              "panelExit 0.9s cubic-bezier(0.76, 0, 0.24, 1) forwards";
+            panel.style.animationDelay = `${index * 0.12}s`;
+          });
+
+          document.getElementById("loading").style.animation =
+            "loadingExit 0.25s ease forwards";
+        }, 250);
+      }
+    }
+
+    // Tutup overlay setelah panel terakhir selesai
+    lastPanel.addEventListener("animationend", (event) => {
+      if (event.animationName === "panelExit") {
+        transition.classList.add("invisible", "pointer-events-none");
+        document.body.classList.remove("overflow-hidden");
+      }
+    });
+
+    window.addEventListener("load", startLoading);
+
+  </script>
+
+</body>
+
+</html>

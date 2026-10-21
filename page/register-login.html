@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wayang Kita - Auth UI</title>
+  <link rel="stylesheet" href="../asset/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-100 font-sans h-screen flex items-center justify-center select-none">
+  <div class="w-full h-full flex flex-col md:flex-row overflow-hidden">
+    <!-- PANEL KIRI -->
+    <div class="w-full md:w-5/12 bg-[#F1F0CC] flex justify-between text-[#3F0D12 ] relative z-10">
+      <div id="welcome-container"
+        class="p-8 md:p-12 z-10 transition-all duration-300 opacity-100 transform translate-y-0">
+        <h1 id="welcome-heading" class="text-4xl md:text-6xl font-bold">
+          Selamat Datang
+        </h1>
+        <p id="welcome-subtext" class="text-sm text-[#772F37]-300 mt-3">
+          Silakan masuk ke akun Anda.
+        </p>
+      </div>
+      <div class="w-125 h-full -scale-x-100 absolute flex items-end justify-end left-0 -z-10">
+        <img class="opacity-10 pointer-events-none" src="../asset/img/ornamenLoginn.png" alt="ornamen">
+      </div>
+      <div class="my-auto py-8 flex justify-end shrink-0">
+        <div class="flex flex-col space-y-4">
+          <button id="btn-login" type="button" onclick="switchMode('login')"
+            class="tab-active text-white font-semibold text-sm py-5 px-8 text-center cursor-pointer transition-all duration-300 transform translate-x-0">
+            Login
+          </button>
+          <button id="btn-signin" type="button" onclick="switchMode('signin')"
+            class="text-[#3F0D12]/70 hover:text-[#3F0D12] font-medium text-sm py-5 px-8 text-center cursor-pointer transition-all duration-300 transform translate-x-2">
+            Sign in
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PANEL KANAN -->
+    <div class="w-full md:w-7/12 bg-[#3F0D12] p-8 sm:p-12 flex flex-col justify-between items-center">
+      <div id="kananCon"
+        class="w-full max-w-sm my-auto flex flex-col items-center transition-all duration-300 ease-in-out opacity-100 transform translate-y-0">
+        <div class="flex flex-col items-center mb-8">
+          <div class="w-14 h-14 bg-white rounded-3xl flex items-center justify-center overflow-hidden p-2">
+            <img src="../asset/img/iconWayang.png" alt="Wayang Logo" class="object-contain w-full h-full">
+          </div>
+          <h1 class="text-2xl font-bold text-white tracking-wide mt-2">
+            Wayang Kita
+          </h1>
+        </div>
+        <form onsubmit="event.preventDefault();" class="w-full space-y-5">
+          <div id="field-fullname"
+            class="hidden items-center border-b-2 border-gray-200 py-1.5 transition-all duration-300">
+            <input type="text" placeholder="Full Name"
+              class="w-full text-sm text-white bg-transparent focus:outline-none placeholder-gray-400">
+          </div>
+          <div class="flex items-center border-b-2 border-gray-200 py-1.5 transition-colors">
+            <input type="email" placeholder="Email"
+              class="w-full text-sm text-white bg-transparent focus:outline-none placeholder-gray-400" required>
+          </div>
+          <div class="flex items-center justify-between border-b-2 border-gray-200 py-1.5 transition-colors">
+            <div class="flex items-center w-full mr-2">
+              <input id="password-input" type="password" placeholder="Password"
+                class="w-full text-sm text-white bg-transparent focus:outline-none placeholder-gray-400" required>
+            </div>
+            <button type="button" onclick="togglePassword('password-input', 'eye-icon')"
+              class="text-gray-400 hover:text-gray-200 transition-colors text-xs focus:outline-none cursor-pointer"
+              aria-label="Toggle password visibility">
+              <i id="eye-icon" class="far fa-eye"></i>
+            </button>
+          </div>
+          <div id="field-confirm-pass"
+            class="hidden items-center justify-between border-b-2 border-gray-200 py-1.5 transition-all duration-300">
+            <div class="flex items-center w-full mr-2">
+              <input id="confirm-password-input" type="password" placeholder="Confirm Password"
+                class="w-full text-sm text-white bg-transparent focus:outline-none placeholder-gray-400">
+            </div>
+            <button type="button" onclick="togglePassword('confirm-password-input', 'eye-icon-confirm')"
+              class="text-gray-400 hover:text-gray-200 transition-colors text-xs focus:outline-none cursor-pointer"
+              aria-label="Toggle password visibility">
+              <i id="eye-icon-confirm" class="far fa-eye"></i>
+            </button>
+          </div>
+          <div class="pt-2 ">
+            <a href="splash.html" id="submit-btn" type="submit"
+              class="w-full flex items-center justify-center bg-black/60 hover:bg-black/90 text-white font-medium py-2.5 px-4 rounded-lg shadow transition-colors text-sm cursor-pointer">
+              Get started
+            </a>
+          </div>
+        </form>
+        <!-- <div class="flex items-center justify-center space-x-10 text-sm mt-10">
+          <button type="button" class="text-gray-300 hover:text-white font-medium transition-colors cursor-pointer">
+            Facebook
+          </button>
+          <button type="button" class="text-gray-300 hover:text-white font-medium transition-colors cursor-pointer">
+            Google
+          </button>
+        </div> -->
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function switchMode(mode) {
+      const btnLogin = document.getElementById('btn-login');
+      const btnSignin = document.getElementById('btn-signin');
+      const fieldFullname = document.getElementById('field-fullname');
+      const fieldConfirmPass = document.getElementById('field-confirm-pass');
+      const welcomeContainer = document.getElementById('welcome-container');
+      const welcomeHeading = document.getElementById('welcome-heading');
+      const welcomeSubtext = document.getElementById('welcome-subtext');
+      const submitBtn = document.getElementById('submit-btn');
+      const kananCon = document.getElementById('kananCon');
+
+      welcomeContainer.classList.add('opacity-0', 'translate-y-3');
+      welcomeContainer.classList.remove('opacity-100', 'translate-y-0');
+
+      kananCon.classList.add('opacity-0', 'translate-y-4');
+      kananCon.classList.remove('opacity-100', 'translate-y-0');
+
+      setTimeout(() => {
+        if (mode === 'signin') {
+
+          btnLogin.className = "text-white/70 hover:text-white font-medium text-sm py-5 px-8 text-center cursor-pointer transition-all duration-300 transform translate-x-2";
+          btnSignin.className = "tab-active text-white font-semibold text-sm py-5 px-8 text-center cursor-pointer transition-all duration-300 transform translate-x-0";
+
+          fieldFullname.classList.remove('hidden');
+          fieldFullname.classList.add('flex');
+          fieldConfirmPass.classList.remove('hidden');
+          fieldConfirmPass.classList.add('flex');
+
+          welcomeHeading.innerText = "Buat Akun";
+          welcomeSubtext.innerText = "Daftarkan diri Anda untuk mulai bergabung.";
+          submitBtn.innerText = "Create Account";
+        } else {
+
+          btnLogin.className = "tab-active text-white font-semibold text-sm py-5 px-8 text-center cursor-pointer transition-all duration-300 transform translate-x-0";
+          btnSignin.className = "text-white/70 hover:text-white font-medium text-sm py-5 px-8 text-center cursor-pointer transition-all duration-300 transform translate-x-2";
+
+          fieldFullname.classList.remove('flex');
+          fieldFullname.classList.add('hidden');
+          fieldConfirmPass.classList.remove('flex');
+          fieldConfirmPass.classList.add('hidden');
+
+          welcomeHeading.innerText = "Selamat Datang";
+          welcomeSubtext.innerText = "Silakan masuk ke akun Anda.";
+          submitBtn.innerText = "Get started";
+        }
+
+        welcomeContainer.classList.remove('opacity-0', 'translate-y-3');
+        welcomeContainer.classList.add('opacity-100', 'translate-y-0');
+
+        kananCon.classList.remove('opacity-0', 'translate-y-4');
+        kananCon.classList.add('opacity-100', 'translate-y-0');
+      }, 200);
+    }
+
+    function togglePassword(inputId, iconId) {
+      const passwordInput = document.getElementById(inputId);
+      const eyeIcon = document.getElementById(iconId);
+
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        eyeIcon.classList.remove('fa-eye');
+        eyeIcon.classList.add('fa-eye-slash');
+      } else {
+        passwordInput.type = 'password';
+        eyeIcon.classList.remove('fa-eye-slash');
+        eyeIcon.classList.add('fa-eye');
+      }
+    }
+  </script>
+</body>
+
+</html>
