@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -9,8 +9,197 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="bg-[#f1f0cc] font-sans text-[#3F0D12] min-h-screen flex flex-col justify-between selection:bg-[#3F0D12] selection:text-white">
 
+  <!-- NAVBAR -->
+  <header class="w-full px-8 py-6 flex items-center justify-between">
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+      <div class="bg-[#3F0D12] text-white p-2.5 rounded-xl flex items-center justify-center">
+        <img src="" alt="Logo" class="w-6 h-6 object-contain">
+      </div>
+      <span class="text-xl font-bold tracking-tight text-[#3F0D12]">WayangKita</span>
+    </div>
+
+    <!-- Nav Links -->
+    <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+      <a href="#" class="text-[#3F0D12] font-semibold relative pb-1 border-b-2 border-[#3F0D12]">Beranda</a>
+      <a href="#" class="text-stone-600 hover:text-[#3F0D12] transition-colors">Tentang</a>
+      <a href="#" class="text-stone-600 hover:text-[#3F0D12] transition-colors">Kenali</a>
+      <a href="#" class="text-stone-600 hover:text-[#3F0D12] transition-colors">Jenis Wayang</a>
+      <a href="#" class="text-stone-600 hover:text-[#3F0D12] transition-colors">Peta Budaya</a>
+      <a href="#" class="text-stone-600 hover:text-[#3F0D12] transition-colors">Studio Kreasi</a>
+    </nav>
+
+    <!-- Search & Profile -->
+    <div class="flex items-center space-x-4">
+      <div class="relative hidden sm:block">
+        <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-stone-400">
+          <i class="fa-solid fa-magnifying-glass text-xs"></i>
+        </span>
+        <input type="text" placeholder="Search" class="bg-stone-200/60 text-xs rounded-full pl-9 pr-4 py-2 focus:outline-none focus:ring-1 focus:ring-[#3F0D12] w-40">
+      </div>
+      <div class="w-9 h-9 rounded-full bg-stone-300 overflow-hidden flex items-center justify-center">
+        <img src="" alt="Profile" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </header>
+
+ <section id="hero" class="flex-1 flex flex-col items-center justify-center px-4 py-6 max-w-7xl mx-auto w-full">
+  <div class="text-center max-w-1xl mb-10">
+    <h1 class="text-1xl md:text-5xl font-serif font-bold text-[#000000] leading-tight mb-1">
+      Memayu Hayuning Bawana
+    </h1>
+    <h1 class="text-1xl md:text-5xl font-serif font-bold text-[#A71D31]">
+      lumantar Seni Pakeliran Adiluhung
+    </h1>
+  </div>
+
+  <div class="flex items-center justify-center w-full overflow-hidden py-6 mb-10 px-2">
+    <div class="flex items-center space-x-[-25px] md:space-x-[-35px] relative">
+      
+      <div class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform -rotate-6 translate-y-4 bg-stone-800 z-10 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl">
+        <img src="../asset/img/kotak hero 1.jpg" alt="Wayang 1" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out">
+        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"></div>
+      </div>
+
+      <div class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform -rotate-4 translate-y-2 bg-stone-800 z-20 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl">
+        <img src="../asset/img/kotak hero 2.png" alt="Wayang 2" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out">
+        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"></div>
+      </div>
+
+      <div class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform -rotate-2 translate-y-1 bg-stone-800 z-30 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl">
+        <img src="../asset/img/kotak hero 3.png" alt="Wayang 3" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out">
+        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"></div>
+      </div>
+
+      <div class="group relative w-40 h-60 md:w-52 md:h-80 rounded-2xl overflow-hidden shadow-2xl transform rotate-0 scale-105 bg-stone-800 z-40 transition-all duration-500 ease-out hover:z-50 hover:scale-115 hover:shadow-2xl">
+        <img src="../asset/img/kotak hero 4.png" alt="Wayang 4" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out">
+        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"></div>
+      </div>
+
+      <div class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform rotate-2 translate-y-1 bg-stone-800 z-30 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl">
+        <img src="../asset/img/kotak hero 5.png" alt="Wayang 5" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out">
+        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"></div>
+      </div>
+
+      <div class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform rotate-4 translate-y-2 bg-stone-800 z-20 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl">
+        <img src="../asset/img/kotak hero 6.jpg" alt="Wayang 6" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out">
+        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"></div>
+      </div>
+
+      <div class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform rotate-6 translate-y-4 bg-stone-800 z-10 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl">
+        <img src="../asset/img/kotak hero 7.png" alt="Wayang 7" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out">
+        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="text-center max-w-xl mx-auto mb-8 px-4">
+    <p class="text-xs md:text-sm text-stone-600 font-serif leading-relaxed">
+      Wayang adalah seni pertunjukan tradisional Indonesia berbasis cerita moral yang dimainkan oleh Dalang diiringi Gamelan, dan diakui UNESCO sebagai warisan budaya dunia.
+    </p>
+  </div>
+
+  <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+    <a href="#" class="group bg-[#3F0D12] hover:bg-[#5a131b] text-white text-xs md:text-sm font-medium py-3 px-6 rounded-full shadow-md hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center space-x-2">
+      <span>Eksplorasi Tokoh & Lakon</span>
+      <i class="fa-solid fa-arrow-right text-xs transform group-hover:translate-x-1 transition-transform duration-300"></i>
+    </a>
+    
+    <a href="#" class="group bg-transparent border border-[#3F0D12]/40 hover:border-[#3F0D12] hover:bg-[#3F0D12]/5 text-[#3F0D12] text-xs md:text-sm font-medium py-3 px-6 rounded-full transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center space-x-2">
+      <i class="fa-solid fa-gear text-xs transform group-hover:rotate-45 transition-transform duration-300"></i>
+      <span>Studio Tatah Sungging</span>
+    </a>
+  </div>
+
+</section>
+
+<section id="about" class="bg-[#f1f0cc] py-16 px-4 md:px-8 font-sans antialiased text-gray-800">
+  <div class="max-w-6xl mx-auto space-y-12">
+    
+    <div class="text-center max-w-3xl mx-auto space-y-3">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-rose-950 leading-tight">
+        Menyelami Esensi & Filosofi Wayang
+      </h2>
+      
+      <p class="text-base md:text-lg text-gray-700 leading-relaxed pt-1">
+        Lebih dari sekadar pertunjukan, wayang adalah panduan hidup. Bayangan pada kelir memantulkan keharmonisan hubungan antara manusia, sesama, alam, dan Sang Pencipta.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      
+      <div class="lg:col-span-6">
+        <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 aspect-[4/3] bg-gray-200">
+          <img 
+            src="" 
+            alt="Pertunjukan Wayang Kulit" 
+            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+          />
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 pointer-events-none"></div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 space-y-6">
+        
+        <div class="flex border-b border-stone-300 gap-8">
+          <button class="pb-3 text-base font-semibold text-rose-900 border-b-2 border-rose-900 transition-colors duration-200">
+            Misi Kami
+          </button>
+          <button class="pb-3 text-base font-medium text-gray-600 hover:text-rose-900 transition-colors duration-200">
+            Keahlian Kami
+          </button>
+          <button class="pb-3 text-base font-medium text-gray-600 hover:text-rose-900 transition-colors duration-200">
+            Nilai-Nilai Kami
+          </button>
+        </div>
+
+        <p class="text-gray-800 leading-relaxed text-base">
+          Menghidupkan kembali kisah wayang sebagai media edukasi interaktif yang menanamkan nilai moral, etika, dan kearifan lokal demi memperkuat karakter bangsa serta melestarikan warisan budaya.
+        </p>
+
+        <div class="grid grid-cols-3 gap-4 pt-2 border-t border-stone-300/60">
+          <div>
+            <div class="text-2xl md:text-3xl font-serif font-bold text-rose-900">500+</div>
+            <p class="text-xs md:text-sm text-gray-700 font-medium leading-snug mt-1">
+              Tokoh & Karakter Wayang
+            </p>
+          </div>
+          <div>
+            <div class="text-2xl md:text-3xl font-serif font-bold text-rose-900">120+</div>
+            <p class="text-xs md:text-sm text-gray-700 font-medium leading-snug mt-1">
+              Naskah Pakeliran Klasik
+            </p>
+          </div>
+          <div>
+            <div class="text-2xl md:text-3xl font-serif font-bold text-rose-900">18</div>
+            <p class="text-xs md:text-sm text-gray-700 font-medium leading-snug mt-1">
+              Sanggar & Balai Budaya
+            </p>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <a href="#" class="group inline-flex items-center justify-center px-6 py-3 bg-rose-900 hover:bg-rose-950 text-white font-medium text-sm rounded-lg transition-all duration-300 ease-out shadow-md hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0">
+            <span>Pelajari Selengkapnya</span>
+            <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+  
+
+  <!-- FOOTER SPACING -->
+  <div class="py-4"></div>
 </body>
 
 </html>
