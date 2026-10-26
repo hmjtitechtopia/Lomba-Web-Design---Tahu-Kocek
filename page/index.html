@@ -1,205 +1,1024 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../asset/css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-
-<body class="bg-[#f1f0cc] font-sans text-[#3F0D12] min-h-screen flex flex-col justify-between selection:bg-[#3F0D12] selection:text-white">
-
-  <!-- NAVBAR -->
-  <header class="w-full px-8 py-6 flex items-center justify-between">
-    <!-- Logo -->
-    <div class="flex items-center space-x-3">
-      <div class="bg-[#3F0D12] text-white p-2.5 rounded-xl flex items-center justify-center">
-        <img src="" alt="Logo" class="w-6 h-6 object-contain">
-      </div>
-      <span class="text-xl font-bold tracking-tight text-[#3F0D12]">WayangKita</span>
-    </div>
-
-    <!-- Nav Links -->
-    <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
-      <a href="#" class="text-[#3F0D12] font-semibold relative pb-1 border-b-2 border-[#3F0D12]">Beranda</a>
-      <a href="#" class="text-stone-600 hover:text-[#3F0D12] transition-colors">Tentang</a>
-      <a href="#" class="text-stone-600 hover:text-[#3F0D12] transition-colors">Kenali</a>
-      <a href="#" class="text-stone-600 hover:text-[#3F0D12] transition-colors">Jenis Wayang</a>
-      <a href="#" class="text-stone-600 hover:text-[#3F0D12] transition-colors">Peta Budaya</a>
-      <a href="#" class="text-stone-600 hover:text-[#3F0D12] transition-colors">Studio Kreasi</a>
-    </nav>
-
-    <!-- Search & Profile -->
-    <div class="flex items-center space-x-4">
-      <div class="relative hidden sm:block">
-        <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-stone-400">
-          <i class="fa-solid fa-magnifying-glass text-xs"></i>
-        </span>
-        <input type="text" placeholder="Search" class="bg-stone-200/60 text-xs rounded-full pl-9 pr-4 py-2 focus:outline-none focus:ring-1 focus:ring-[#3F0D12] w-40">
-      </div>
-      <div class="w-9 h-9 rounded-full bg-stone-300 overflow-hidden flex items-center justify-center">
-        <img src="" alt="Profile" class="w-full h-full object-cover">
-      </div>
-    </div>
-  </header>
-
- <section id="hero" class="flex-1 flex flex-col items-center justify-center px-4 py-6 max-w-7xl mx-auto w-full">
-  <div class="text-center max-w-1xl mb-10">
-    <h1 class="text-1xl md:text-5xl font-serif font-bold text-[#000000] leading-tight mb-1">
-      Memayu Hayuning Bawana
-    </h1>
-    <h1 class="text-1xl md:text-5xl font-serif font-bold text-[#A71D31]">
-      lumantar Seni Pakeliran Adiluhung
-    </h1>
-  </div>
-
-  <div class="flex items-center justify-center w-full overflow-hidden py-6 mb-10 px-2">
-    <div class="flex items-center space-x-[-25px] md:space-x-[-35px] relative">
-      
-      <div class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform -rotate-6 translate-y-4 bg-stone-800 z-10 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl">
-        <img src="../asset/img/kotak hero 1.jpg" alt="Wayang 1" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out">
-        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"></div>
+  <body
+    class="bg-[#f1f0cc] font-sans text-[#3F0D12] min-h-screen flex flex-col justify-between selection:bg-[#3F0D12] selection:text-white"
+  >
+    <!-- NAVBAR -->
+    <header class="w-full px-8 py-6 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <div
+          class="bg-[#3F0D12] text-white p-2.5 rounded-xl flex items-center justify-center"
+        >
+          <img src="" alt="Logo" class="w-6 h-6 object-contain" />
+        </div>
+        <span class="text-xl font-bold tracking-tight text-[#3F0D12]"
+          >WayangKita</span
+        >
       </div>
 
-      <div class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform -rotate-4 translate-y-2 bg-stone-800 z-20 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl">
-        <img src="../asset/img/kotak hero 2.png" alt="Wayang 2" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out">
-        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"></div>
-      </div>
+      <!-- Nav Links -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <a
+          href="#"
+          class="text-[#3F0D12] font-semibold relative pb-1 border-b-2 border-[#3F0D12]"
+          >Beranda</a
+        >
+        <a
+          href="#"
+          class="text-stone-600 hover:text-[#3F0D12] transition-colors"
+          >Tentang</a
+        >
+        <a
+          href="#"
+          class="text-stone-600 hover:text-[#3F0D12] transition-colors"
+          >Kenali</a
+        >
+        <a
+          href="#"
+          class="text-stone-600 hover:text-[#3F0D12] transition-colors"
+          >Jenis Wayang</a
+        >
+        <a
+          href="#"
+          class="text-stone-600 hover:text-[#3F0D12] transition-colors"
+          >Peta Budaya</a
+        >
+        <a
+          href="#"
+          class="text-stone-600 hover:text-[#3F0D12] transition-colors"
+          >Studio Kreasi</a
+        >
+      </nav>
 
-      <div class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform -rotate-2 translate-y-1 bg-stone-800 z-30 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl">
-        <img src="../asset/img/kotak hero 3.png" alt="Wayang 3" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out">
-        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"></div>
-      </div>
-
-      <div class="group relative w-40 h-60 md:w-52 md:h-80 rounded-2xl overflow-hidden shadow-2xl transform rotate-0 scale-105 bg-stone-800 z-40 transition-all duration-500 ease-out hover:z-50 hover:scale-115 hover:shadow-2xl">
-        <img src="../asset/img/kotak hero 4.png" alt="Wayang 4" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out">
-        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"></div>
-      </div>
-
-      <div class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform rotate-2 translate-y-1 bg-stone-800 z-30 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl">
-        <img src="../asset/img/kotak hero 5.png" alt="Wayang 5" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out">
-        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"></div>
-      </div>
-
-      <div class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform rotate-4 translate-y-2 bg-stone-800 z-20 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl">
-        <img src="../asset/img/kotak hero 6.jpg" alt="Wayang 6" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out">
-        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"></div>
-      </div>
-
-      <div class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform rotate-6 translate-y-4 bg-stone-800 z-10 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl">
-        <img src="../asset/img/kotak hero 7.png" alt="Wayang 7" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out">
-        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"></div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="text-center max-w-xl mx-auto mb-8 px-4">
-    <p class="text-xs md:text-sm text-stone-600 font-serif leading-relaxed">
-      Wayang adalah seni pertunjukan tradisional Indonesia berbasis cerita moral yang dimainkan oleh Dalang diiringi Gamelan, dan diakui UNESCO sebagai warisan budaya dunia.
-    </p>
-  </div>
-
-  <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
-    <a href="#" class="group bg-[#3F0D12] hover:bg-[#5a131b] text-white text-xs md:text-sm font-medium py-3 px-6 rounded-full shadow-md hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center space-x-2">
-      <span>Eksplorasi Tokoh & Lakon</span>
-      <i class="fa-solid fa-arrow-right text-xs transform group-hover:translate-x-1 transition-transform duration-300"></i>
-    </a>
-    
-    <a href="#" class="group bg-transparent border border-[#3F0D12]/40 hover:border-[#3F0D12] hover:bg-[#3F0D12]/5 text-[#3F0D12] text-xs md:text-sm font-medium py-3 px-6 rounded-full transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center space-x-2">
-      <i class="fa-solid fa-gear text-xs transform group-hover:rotate-45 transition-transform duration-300"></i>
-      <span>Studio Tatah Sungging</span>
-    </a>
-  </div>
-
-</section>
-
-<section id="about" class="bg-[#f1f0cc] py-16 px-4 md:px-8 font-sans antialiased text-gray-800">
-  <div class="max-w-6xl mx-auto space-y-12">
-    
-    <div class="text-center max-w-3xl mx-auto space-y-3">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-rose-950 leading-tight">
-        Menyelami Esensi & Filosofi Wayang
-      </h2>
-      
-      <p class="text-base md:text-lg text-gray-700 leading-relaxed pt-1">
-        Lebih dari sekadar pertunjukan, wayang adalah panduan hidup. Bayangan pada kelir memantulkan keharmonisan hubungan antara manusia, sesama, alam, dan Sang Pencipta.
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-      
-      <div class="lg:col-span-6">
-        <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 aspect-[4/3] bg-gray-200">
-          <img 
-            src="" 
-            alt="Pertunjukan Wayang Kulit" 
-            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+      <!-- Search & Profile -->
+      <div class="flex items-center space-x-4">
+        <div class="relative hidden sm:block">
+          <span
+            class="absolute inset-y-0 left-0 flex items-center pl-3 text-stone-400"
+          >
+            <i class="fa-solid fa-magnifying-glass text-xs"></i>
+          </span>
+          <input
+            type="text"
+            placeholder="Search"
+            class="bg-stone-200/60 text-xs rounded-full pl-9 pr-4 py-2 focus:outline-none focus:ring-1 focus:ring-[#3F0D12] w-40"
           />
-          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 pointer-events-none"></div>
+        </div>
+        <div
+          class="w-9 h-9 rounded-full bg-stone-300 overflow-hidden flex items-center justify-center"
+        >
+          <img src="" alt="Profile" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </header>
+
+    <section
+      id="hero"
+      class="flex-1 flex flex-col items-center justify-center px-4 py-6 max-w-7xl mx-auto w-full"
+    >
+      <div class="text-center max-w-1xl mb-10">
+        <h1
+          class="text-1xl md:text-5xl font-serif font-bold text-[#000000] leading-tight mb-1"
+        >
+          Memayu Hayuning Bawana
+        </h1>
+        <h1 class="text-1xl md:text-5xl font-serif font-bold text-[#A71D31]">
+          lumantar Seni Pakeliran Adiluhung
+        </h1>
+      </div>
+
+      <div
+        class="flex items-center justify-center w-full overflow-hidden py-6 mb-10 px-2"
+      >
+        <div
+          class="flex items-center space-x-[-25px] md:space-x-[-35px] relative"
+        >
+          <div
+            class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform -rotate-6 translate-y-4 bg-stone-800 z-10 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl"
+          >
+            <img
+              src="../asset/img/kotak hero 1.jpg"
+              alt="Wayang 1"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+            />
+            <div
+              class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"
+            ></div>
+          </div>
+
+          <div
+            class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform -rotate-4 translate-y-2 bg-stone-800 z-20 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl"
+          >
+            <img
+              src="../asset/img/kotak hero 2.png"
+              alt="Wayang 2"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+            />
+            <div
+              class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"
+            ></div>
+          </div>
+
+          <div
+            class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform -rotate-2 translate-y-1 bg-stone-800 z-30 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl"
+          >
+            <img
+              src="../asset/img/kotak hero 3.png"
+              alt="Wayang 3"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+            />
+            <div
+              class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"
+            ></div>
+          </div>
+
+          <div
+            class="group relative w-40 h-60 md:w-52 md:h-80 rounded-2xl overflow-hidden shadow-2xl transform rotate-0 scale-105 bg-stone-800 z-40 transition-all duration-500 ease-out hover:z-50 hover:scale-115 hover:shadow-2xl"
+          >
+            <img
+              src="../asset/img/kotak hero 4.png"
+              alt="Wayang 4"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+            />
+            <div
+              class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"
+            ></div>
+          </div>
+
+          <div
+            class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform rotate-2 translate-y-1 bg-stone-800 z-30 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl"
+          >
+            <img
+              src="../asset/img/kotak hero 5.png"
+              alt="Wayang 5"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+            />
+            <div
+              class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"
+            ></div>
+          </div>
+
+          <div
+            class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform rotate-4 translate-y-2 bg-stone-800 z-20 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl"
+          >
+            <img
+              src="../asset/img/kotak hero 6.jpg"
+              alt="Wayang 6"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+            />
+            <div
+              class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"
+            ></div>
+          </div>
+
+          <div
+            class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform rotate-6 translate-y-4 bg-stone-800 z-10 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl"
+          >
+            <img
+              src="../asset/img/kotak hero 7.png"
+              alt="Wayang 7"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+            />
+            <div
+              class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"
+            ></div>
+          </div>
         </div>
       </div>
 
-      <div class="lg:col-span-6 space-y-6">
-        
-        <div class="flex border-b border-stone-300 gap-8">
-          <button class="pb-3 text-base font-semibold text-rose-900 border-b-2 border-rose-900 transition-colors duration-200">
-            Misi Kami
-          </button>
-          <button class="pb-3 text-base font-medium text-gray-600 hover:text-rose-900 transition-colors duration-200">
-            Keahlian Kami
-          </button>
-          <button class="pb-3 text-base font-medium text-gray-600 hover:text-rose-900 transition-colors duration-200">
-            Nilai-Nilai Kami
-          </button>
-        </div>
-
-        <p class="text-gray-800 leading-relaxed text-base">
-          Menghidupkan kembali kisah wayang sebagai media edukasi interaktif yang menanamkan nilai moral, etika, dan kearifan lokal demi memperkuat karakter bangsa serta melestarikan warisan budaya.
+      <div class="text-center max-w-xl mx-auto mb-8 px-4">
+        <p class="text-xs md:text-sm text-stone-600 font-serif leading-relaxed">
+          Wayang adalah seni pertunjukan tradisional Indonesia berbasis cerita
+          moral yang dimainkan oleh Dalang diiringi Gamelan, dan diakui UNESCO
+          sebagai warisan budaya dunia.
         </p>
+      </div>
 
-        <div class="grid grid-cols-3 gap-4 pt-2 border-t border-stone-300/60">
-          <div>
-            <div class="text-2xl md:text-3xl font-serif font-bold text-rose-900">500+</div>
-            <p class="text-xs md:text-sm text-gray-700 font-medium leading-snug mt-1">
-              Tokoh & Karakter Wayang
-            </p>
-          </div>
-          <div>
-            <div class="text-2xl md:text-3xl font-serif font-bold text-rose-900">120+</div>
-            <p class="text-xs md:text-sm text-gray-700 font-medium leading-snug mt-1">
-              Naskah Pakeliran Klasik
-            </p>
-          </div>
-          <div>
-            <div class="text-2xl md:text-3xl font-serif font-bold text-rose-900">18</div>
-            <p class="text-xs md:text-sm text-gray-700 font-medium leading-snug mt-1">
-              Sanggar & Balai Budaya
-            </p>
-          </div>
+      <div
+        class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full"
+      >
+        <a
+          href="#"
+          class="group bg-[#3F0D12] hover:bg-[#5a131b] text-white text-xs md:text-sm font-medium py-3 px-6 rounded-full shadow-md hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center space-x-2"
+        >
+          <span>Eksplorasi Tokoh & Lakon</span>
+          <i
+            class="fa-solid fa-arrow-right text-xs transform group-hover:translate-x-1 transition-transform duration-300"
+          ></i>
+        </a>
+
+        <a
+          href="#"
+          class="group bg-transparent border border-[#3F0D12]/40 hover:border-[#3F0D12] hover:bg-[#3F0D12]/5 text-[#3F0D12] text-xs md:text-sm font-medium py-3 px-6 rounded-full transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center space-x-2"
+        >
+          <i
+            class="fa-solid fa-gear text-xs transform group-hover:rotate-45 transition-transform duration-300"
+          ></i>
+          <span>Studio Tatah Sungging</span>
+        </a>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="bg-[#f1f0cc] py-16 px-4 md:px-8 font-sans antialiased text-gray-800"
+    >
+      <div class="max-w-6xl mx-auto space-y-12">
+        <div class="text-center max-w-3xl mx-auto space-y-3">
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-rose-950 leading-tight"
+          >
+            Menyelami Esensi & Filosofi Wayang
+          </h2>
+
+          <p class="text-base md:text-lg text-gray-700 leading-relaxed pt-1">
+            Lebih dari sekadar pertunjukan, wayang adalah panduan hidup.
+            Bayangan pada kelir memantulkan keharmonisan hubungan antara
+            manusia, sesama, alam, dan Sang Pencipta.
+          </p>
         </div>
 
-        <div class="pt-2">
-          <a href="#" class="group inline-flex items-center justify-center px-6 py-3 bg-rose-900 hover:bg-rose-950 text-white font-medium text-sm rounded-lg transition-all duration-300 ease-out shadow-md hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0">
-            <span>Pelajari Selengkapnya</span>
-            <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center"
+        >
+          <div class="lg:col-span-6">
+            <div
+              class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 aspect-[4/3] bg-gray-200"
+            >
+              <img
+                src=""
+                alt="Pertunjukan Wayang Kulit"
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+              />
+              <div
+                class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 pointer-events-none"
+              ></div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 space-y-6">
+            <div class="flex border-b border-stone-300 gap-8">
+              <button
+                class="pb-3 text-base font-semibold text-rose-900 border-b-2 border-rose-900 transition-colors duration-200"
+              >
+                Misi Kami
+              </button>
+              <button
+                class="pb-3 text-base font-medium text-gray-600 hover:text-rose-900 transition-colors duration-200"
+              >
+                Keahlian Kami
+              </button>
+              <button
+                class="pb-3 text-base font-medium text-gray-600 hover:text-rose-900 transition-colors duration-200"
+              >
+                Nilai-Nilai Kami
+              </button>
+            </div>
+
+            <p class="text-gray-800 leading-relaxed text-base">
+              Menghidupkan kembali kisah wayang sebagai media edukasi interaktif
+              yang menanamkan nilai moral, etika, dan kearifan lokal demi
+              memperkuat karakter bangsa serta melestarikan warisan budaya.
+            </p>
+
+            <div
+              class="grid grid-cols-3 gap-4 pt-2 border-t border-stone-300/60"
+            >
+              <div>
+                <div
+                  class="text-2xl md:text-3xl font-serif font-bold text-rose-900"
+                >
+                  500+
+                </div>
+                <p
+                  class="text-xs md:text-sm text-gray-700 font-medium leading-snug mt-1"
+                >
+                  Tokoh & Karakter Wayang
+                </p>
+              </div>
+              <div>
+                <div
+                  class="text-2xl md:text-3xl font-serif font-bold text-rose-900"
+                >
+                  120+
+                </div>
+                <p
+                  class="text-xs md:text-sm text-gray-700 font-medium leading-snug mt-1"
+                >
+                  Naskah Pakeliran Klasik
+                </p>
+              </div>
+              <div>
+                <div
+                  class="text-2xl md:text-3xl font-serif font-bold text-rose-900"
+                >
+                  18
+                </div>
+                <p
+                  class="text-xs md:text-sm text-gray-700 font-medium leading-snug mt-1"
+                >
+                  Sanggar & Balai Budaya
+                </p>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <a
+                href="#"
+                class="group inline-flex items-center justify-center px-6 py-3 bg-rose-900 hover:bg-rose-950 text-white font-medium text-sm rounded-lg transition-all duration-300 ease-out shadow-md hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0"
+              >
+                <span>Pelajari Selengkapnya</span>
+                <svg
+                  class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="ragam-jenis"
+      class="relative w-full min-h-screen overflow-hidden flex flex-col justify-between bg-[#F1F0CC] font-sans antialiased selection:bg-[#3F0D12] selection:text-[#F1F0CC]"
+    >
+      <header
+        class="relative z-30 flex items-center justify-between px-6 sm:px-12 py-6 w-full max-w-7xl mx-auto"
+      >
+        <div class="flex items-center gap-4">
+          <button
+            id="back-btn"
+            onclick="closeDetail()"
+            class="opacity-0 pointer-events-none -translate-x-4 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-[#F1F0CC] hover:opacity-75 bg-[#A71D31] px-4 py-2 rounded-full shadow-md"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              ></path>
             </svg>
+            Kembali
+          </button>
+
+          <a
+            href="#"
+            id="brand-logo"
+            class="text-xl font-black tracking-tight text-[#3F0D12] transition-colors duration-700"
+          >
+            WayangKita
           </a>
         </div>
+      </header>
 
+      <main
+        class="relative z-20 flex-1 flex w-full h-full max-w-7xl mx-auto px-4 sm:px-8 py-4"
+      >
+        <div
+          id="cards-wrapper"
+          class="w-full h-full flex flex-col md:flex-row gap-5 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]"
+        >
+          <div
+            onclick="selectCard(0)"
+            data-index="0"
+            class="card-item group relative flex-1 rounded-3xl cursor-pointer overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[#D5BF86]/20 hover:bg-[#3F0D12] shadow-sm hover:shadow-2xl border border-[#D5BF86]/60 flex flex-col justify-between p-6 sm:p-8"
+          >
+            <div
+              class="card-bg absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out bg-[#3F0D12]"
+            ></div>
+
+            <div
+              class="giant-text absolute inset-0 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform scale-90 select-none"
+            >
+              <span
+                class="text-[16vw] font-black leading-none text-[#F1F0CC]/10 tracking-tighter uppercase"
+                >Wayang Kulit</span
+              >
+            </div>
+
+            <div class="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <span
+                  class="card-number text-xs font-bold tracking-widest text-[#8D775F] group-hover:text-[#A71D31] transition-colors duration-500"
+                  >01</span
+                >
+                <h2
+                  class="card-title text-2xl sm:text-3xl font-extrabold tracking-tight text-[#3F0D12] group-hover:text-[#F1F0CC] transition-colors duration-500 mt-2"
+                >
+                  Wayang Kulit
+                </h2>
+                <p
+                  class="card-subtext text-xs font-medium text-[#8D775F] group-hover:text-[#F1F0CC]/80 transition-colors duration-500 mt-1"
+                >
+                  Subtext
+                </p>
+              </div>
+
+              <div
+                class="image-container relative my-auto py-4 flex justify-center items-center h-44 sm:h-60 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+              >
+                <img
+                  src="../asset/img/wayang kulit.jpg"
+                  alt="Foto Wayang Kulit"
+                  class="product-img h-full object-contain filter drop-shadow-xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] opacity-0 group-hover:opacity-100 group-hover:scale-105 transform"
+                />
+              </div>
+
+              <div
+                class="cta-wrapper relative z-10 pt-2 flex items-center justify-between"
+              >
+                <button
+                  class="card-btn px-5 py-2.5 rounded-full text-xs font-bold bg-[#3F0D12] text-[#F1F0CC] group-hover:bg-[#A71D31] transition-all duration-500 flex items-center gap-2 shadow-md"
+                >
+                  <span>View more</span>
+                  <svg
+                    class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            onclick="selectCard(1)"
+            data-index="1"
+            class="card-item group relative flex-1 rounded-3xl cursor-pointer overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[#D5BF86]/20 hover:bg-[#3F0D12] shadow-sm hover:shadow-2xl border border-[#D5BF86]/60 flex flex-col justify-between p-6 sm:p-8"
+          >
+            <div
+              class="card-bg absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out bg-[#3F0D12]"
+            ></div>
+
+            <div
+              class="giant-text absolute inset-0 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform scale-90 select-none"
+            >
+              <span
+                class="text-[16vw] font-black leading-none text-[#F1F0CC]/10 tracking-tighter uppercase"
+                >Wayang Golek</span
+              >
+            </div>
+
+            <div class="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <span
+                  class="card-number text-xs font-bold tracking-widest text-[#8D775F] group-hover:text-[#A71D31] transition-colors duration-500"
+                  >02</span
+                >
+                <h2
+                  class="card-title text-2xl sm:text-3xl font-extrabold tracking-tight text-[#3F0D12] group-hover:text-[#F1F0CC] transition-colors duration-500 mt-2"
+                >
+                  Wayang Golek
+                </h2>
+                <p
+                  class="card-subtext text-xs font-medium text-[#8D775F] group-hover:text-[#F1F0CC]/80 transition-colors duration-500 mt-1"
+                >
+                  Subtext
+                </p>
+              </div>
+
+              <div
+                class="image-container relative my-auto py-4 flex justify-center items-center h-44 sm:h-60 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+              >
+                <img
+                  src=""
+                  alt="Foto Wayang Golek"
+                  class="product-img h-full object-contain filter drop-shadow-xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] opacity-0 group-hover:opacity-100 group-hover:scale-105 transform"
+                />
+              </div>
+
+              <div
+                class="cta-wrapper relative z-10 pt-2 flex items-center justify-between"
+              >
+                <button
+                  class="card-btn px-5 py-2.5 rounded-full text-xs font-bold bg-[#3F0D12] text-[#F1F0CC] group-hover:bg-[#A71D31] transition-all duration-500 flex items-center gap-2 shadow-md"
+                >
+                  <span>View more</span>
+                  <svg
+                    class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            onclick="selectCard(2)"
+            data-index="2"
+            class="card-item group relative flex-1 rounded-3xl cursor-pointer overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[#D5BF86]/20 hover:bg-[#3F0D12] shadow-sm hover:shadow-2xl border border-[#D5BF86]/60 flex flex-col justify-between p-6 sm:p-8"
+          >
+            <div
+              class="card-bg absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out bg-[#3F0D12]"
+            ></div>
+
+            <div
+              class="giant-text absolute inset-0 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform scale-90 select-none"
+            >
+              <span
+                class="text-[16vw] font-black leading-none text-[#F1F0CC]/10 tracking-tighter uppercase"
+                >Wayang Klitik</span
+              >
+            </div>
+
+            <div class="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <span
+                  class="card-number text-xs font-bold tracking-widest text-[#8D775F] group-hover:text-[#A71D31] transition-colors duration-500"
+                  >03</span
+                >
+                <h2
+                  class="card-title text-2xl sm:text-3xl font-extrabold tracking-tight text-[#3F0D12] group-hover:text-[#F1F0CC] transition-colors duration-500 mt-2"
+                >
+                  Wayang Klitik
+                </h2>
+                <p
+                  class="card-subtext text-xs font-medium text-[#8D775F] group-hover:text-[#F1F0CC]/80 transition-colors duration-500 mt-1"
+                >
+                  Subtext
+                </p>
+              </div>
+
+              <div
+                class="image-container relative my-auto py-4 flex justify-center items-center h-44 sm:h-60 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+              >
+                <img
+                  src=""
+                  alt="Foto wayang Klitik"
+                  class="product-img h-full object-contain filter drop-shadow-xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] opacity-0 group-hover:opacity-100 group-hover:scale-105 transform"
+                />
+              </div>
+
+              <div
+                class="cta-wrapper relative z-10 pt-2 flex items-center justify-between"
+              >
+                <button
+                  class="card-btn px-5 py-2.5 rounded-full text-xs font-bold bg-[#3F0D12] text-[#F1F0CC] group-hover:bg-[#A71D31] transition-all duration-500 flex items-center gap-2 shadow-md"
+                >
+                  <span>View more</span>
+                  <svg
+                    class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            onclick="selectCard(3)"
+            data-index="3"
+            class="card-item group relative flex-1 rounded-3xl cursor-pointer overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[#D5BF86]/20 hover:bg-[#3F0D12] shadow-sm hover:shadow-2xl border border-[#D5BF86]/60 flex flex-col justify-between p-6 sm:p-8"
+          >
+            <div
+              class="card-bg absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out bg-[#3F0D12]"
+            ></div>
+
+            <div
+              class="giant-text absolute inset-0 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform scale-90 select-none"
+            >
+              <span
+                class="text-[16vw] font-black leading-none text-[#F1F0CC]/10 tracking-tighter uppercase"
+                >Wayang Kulit Bali</span
+              >
+            </div>
+
+            <div class="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <span
+                  class="card-number text-xs font-bold tracking-widest text-[#8D775F] group-hover:text-[#A71D31] transition-colors duration-500"
+                  >04</span
+                >
+                <h2
+                  class="card-title text-2xl sm:text-3xl font-extrabold tracking-tight text-[#3F0D12] group-hover:text-[#F1F0CC] transition-colors duration-500 mt-2"
+                >
+                  Wayang Kulit Bali
+                </h2>
+                <p
+                  class="card-subtext text-xs font-medium text-[#8D775F] group-hover:text-[#F1F0CC]/80 transition-colors duration-500 mt-1"
+                >
+                  Subtext
+                </p>
+              </div>
+
+              <div
+                class="image-container relative my-auto py-4 flex justify-center items-center h-44 sm:h-60 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+              >
+                <img
+                  src=""
+                  alt="Foto wayang kulit bali "
+                  class="product-img h-full object-contain filter drop-shadow-xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] opacity-0 group-hover:opacity-100 group-hover:scale-105 transform"
+                />
+              </div>
+
+              <div
+                class="cta-wrapper relative z-10 pt-2 flex items-center justify-between"
+              >
+                <button
+                  class="card-btn px-5 py-2.5 rounded-full text-xs font-bold bg-[#3F0D12] text-[#F1F0CC] group-hover:bg-[#A71D31] transition-all duration-500 flex items-center gap-2 shadow-md"
+                >
+                  <span>View more</span>
+                  <svg
+                    class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer
+        id="detail-cta"
+        class="relative z-30 pb-8 pt-2 px-8 flex justify-center items-center opacity-0 pointer-events-none transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform translate-y-6"
+      >
+        <button
+          class="px-10 py-4 rounded-full bg-[#A71D31] text-[#F1F0CC] hover:bg-[#3F0D12] font-extrabold text-sm tracking-wide shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-3 group"
+        >
+          <span>CTA Selengkapnya</span>
+          <svg
+            class="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2.5"
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+            ></path>
+          </svg>
+        </button>
+      </footer>
+    </section>
+
+    <section
+      id="jenis"
+      class="relative overflow-hidden bg-[#fdfaf5] px-0 py-12 md:py-16"
+    >
+      <!-- HEADER -->
+      <div class="mx-auto mb-8 max-w-3xl px-5 text-center md:mb-10">
+        <p
+          class="mb-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[#b66b37]"
+        >
+          Keragaman Daerah
+        </p>
+
+        <h2 class="font-serif text-2xl font-bold text-[#702018] md:text-3xl">
+          Pesona Wayang Nusantara
+        </h2>
+
+        <p
+          class="mx-auto mt-4 max-w-xl text-xs leading-relaxed text-[#89847d] md:text-sm"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Jelajahi
+          beragam jenis wayang Nusantara.
+        </p>
       </div>
 
-    </div>
+      <!-- CAROUSEL 3D -->
+      <div class="relative w-full">
+        <div
+          id="ragam-jenis-viewport"
+          class="overflow-hidden py-8"
+          tabindex="0"
+          aria-label="Carousel jenis wayang"
+        >
+          <div
+            id="ragam-jenis-track"
+            class="relative flex items-stretch gap-5 will-change-transform md:gap-7"
+          >
+            <!-- WAYANG 1 -->
+            <article
+              class="ragam-jenis-card w-[72vw] shrink-0 rounded-2xl border border-[#eee4d8] bg-[#fdfaf5] p-4 md:w-[min(58vw,680px)] md:p-6"
+              aria-label="Wayang 1"
+            >
+              <h3
+                class="mb-4 text-center font-serif text-xl font-bold text-[#702018] md:text-2xl"
+              >
+                Wayang 1
+              </h3>
 
-  </div>
-</section>
-  
+              <img
+                src=""
+                alt="Wayang 1"
+                class="h-40 w-full rounded-md object-cover md:h-56"
+              />
 
-  <!-- FOOTER SPACING -->
-  <div class="py-4"></div>
-</body>
+              <p
+                class="mt-4 text-center text-[10px] font-semibold text-[#b66b37] md:text-xs"
+              >
+                Lorem ipsum
+              </p>
 
+              <p
+                class="mt-4 text-sm leading-relaxed tracking-wide text-[#77736e] md:text-base"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </article>
+
+            <!-- WAYANG 2 -->
+            <article
+              class="ragam-jenis-card w-[72vw] shrink-0 rounded-2xl border border-[#eee4d8] bg-[#fdfaf5] p-4 md:w-[min(58vw,680px)] md:p-6"
+              aria-label="Wayang 2"
+            >
+              <h3
+                class="mb-4 text-center font-serif text-xl font-bold text-[#702018] md:text-2xl"
+              >
+                Wayang 2
+              </h3>
+
+              <img
+                src=""
+                alt="Wayang 2"
+                class="h-40 w-full rounded-md object-cover md:h-56"
+              />
+
+              <p
+                class="mt-4 text-center text-[10px] font-semibold text-[#b66b37] md:text-xs"
+              >
+                Lorem ipsum
+              </p>
+
+              <p
+                class="mt-4 text-sm leading-relaxed tracking-wide text-[#77736e] md:text-base"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </article>
+
+            <!-- WAYANG 3 -->
+            <article
+              class="ragam-jenis-card w-[72vw] shrink-0 rounded-2xl border border-[#eee4d8] bg-[#fdfaf5] p-4 md:w-[min(58vw,680px)] md:p-6"
+              aria-label="Wayang 3"
+            >
+              <h3
+                class="mb-4 text-center font-serif text-xl font-bold text-[#702018] md:text-2xl"
+              >
+                Wayang 3
+              </h3>
+
+              <img
+                src=""
+                alt="Wayang 3"
+                class="h-40 w-full rounded-md object-cover md:h-56"
+              />
+
+              <p
+                class="mt-4 text-center text-[10px] font-semibold text-[#b66b37] md:text-xs"
+              >
+                Lorem ipsum
+              </p>
+
+              <p
+                class="mt-4 text-sm leading-relaxed tracking-wide text-[#77736e] md:text-base"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </article>
+
+            <!-- WAYANG 4 -->
+            <article
+              class="ragam-jenis-card w-[72vw] shrink-0 rounded-2xl border border-[#eee4d8] bg-[#fdfaf5] p-4 md:w-[min(58vw,680px)] md:p-6"
+              aria-label="Wayang 4"
+            >
+              <h3
+                class="mb-4 text-center font-serif text-xl font-bold text-[#702018] md:text-2xl"
+              >
+                Wayang 4
+              </h3>
+
+              <img
+                src=""
+                alt="Wayang 4"
+                class="h-40 w-full rounded-md object-cover md:h-56"
+              />
+
+              <p
+                class="mt-4 text-center text-[10px] font-semibold text-[#b66b37] md:text-xs"
+              >
+                Lorem ipsum
+              </p>
+
+              <p
+                class="mt-4 text-sm leading-relaxed tracking-wide text-[#77736e] md:text-base"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </article>
+
+            <!-- WAYANG 5 -->
+            <article
+              class="ragam-jenis-card w-[72vw] shrink-0 rounded-2xl border border-[#eee4d8] bg-[#fdfaf5] p-4 md:w-[min(58vw,680px)] md:p-6"
+              aria-label="Wayang 5"
+            >
+              <h3
+                class="mb-4 text-center font-serif text-xl font-bold text-[#702018] md:text-2xl"
+              >
+                Wayang 5
+              </h3>
+
+              <img
+                src=""
+                alt="Wayang 5"
+                class="h-40 w-full rounded-md object-cover md:h-56"
+              />
+
+              <p
+                class="mt-4 text-center text-[10px] font-semibold text-[#b66b37] md:text-xs"
+              >
+                Lorem ipsum
+              </p>
+
+              <p
+                class="mt-4 text-sm leading-relaxed tracking-wide text-[#77736e] md:text-base"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </article>
+
+            <!-- WAYANG 6 -->
+            <article
+              class="ragam-jenis-card w-[72vw] shrink-0 rounded-2xl border border-[#eee4d8] bg-[#fdfaf5] p-4 md:w-[min(58vw,680px)] md:p-6"
+              aria-label="Wayang 6"
+            >
+              <h3
+                class="mb-4 text-center font-serif text-xl font-bold text-[#702018] md:text-2xl"
+              >
+                Wayang 6
+              </h3>
+
+              <img
+                src=""
+                alt="Wayang 6"
+                class="h-40 w-full rounded-md object-cover md:h-56"
+              />
+
+              <p
+                class="mt-4 text-center text-[10px] font-semibold text-[#b66b37] md:text-xs"
+              >
+                Lorem ipsum
+              </p>
+
+              <p
+                class="mt-4 text-sm leading-relaxed tracking-wide text-[#77736e] md:text-base"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </article>
+
+            <!-- WAYANG 7 -->
+            <article
+              class="ragam-jenis-card w-[72vw] shrink-0 rounded-2xl border border-[#eee4d8] bg-[#fdfaf5] p-4 md:w-[min(58vw,680px)] md:p-6"
+              aria-label="Wayang 7"
+            >
+              <h3
+                class="mb-4 text-center font-serif text-xl font-bold text-[#702018] md:text-2xl"
+              >
+                Wayang 7
+              </h3>
+
+              <img
+                src=""
+                alt="Wayang 7"
+                class="h-40 w-full rounded-md object-cover md:h-56"
+              />
+
+              <p
+                class="mt-4 text-center text-[10px] font-semibold text-[#b66b37] md:text-xs"
+              >
+                Lorem ipsum
+              </p>
+
+              <p
+                class="mt-4 text-sm leading-relaxed tracking-wide text-[#77736e] md:text-base"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- PANAH KIRI DAN KANAN -->
+      <div class="mt-5 flex items-center justify-center gap-5">
+        <button
+          id="ragam-jenis-prev"
+          type="button"
+          aria-label="Wayang sebelumnya"
+          class="flex h-11 w-11 items-center justify-center rounded-full bg-[#dedede] text-[#282828] transition-colors duration-300 hover:bg-[#c9c9c9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#702018]"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m15 18-6-6 6-6" />
+          </svg>
+        </button>
+
+        <button
+          id="ragam-jenis-next"
+          type="button"
+          aria-label="Wayang berikutnya"
+          class="flex h-11 w-11 items-center justify-center rounded-full bg-[#dedede] text-[#282828] transition-colors duration-300 hover:bg-[#c9c9c9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#702018]"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <div class="py-4"></div>
+    <script src="../js/ragam-jenis.js"></script>
+  </body>
 </html>
