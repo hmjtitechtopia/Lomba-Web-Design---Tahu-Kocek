@@ -1,1024 +1,1119 @@
 <!doctype html>
 <html lang="id" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../asset/css/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
 
-  <body
-    class="bg-[#f1f0cc] font-sans text-[#3F0D12] min-h-screen flex flex-col justify-between selection:bg-[#3F0D12] selection:text-white"
-  >
-    <!-- NAVBAR -->
-    <header class="w-full px-8 py-6 flex items-center justify-between">
-      <!-- Logo -->
-      <div class="flex items-center space-x-3">
-        <div
-          class="bg-[#3F0D12] text-white p-2.5 rounded-xl flex items-center justify-center"
-        >
-          <img src="" alt="Logo" class="w-6 h-6 object-contain" />
-        </div>
-        <span class="text-xl font-bold tracking-tight text-[#3F0D12]"
-          >WayangKita</span
-        >
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WayangKita</title>
+  <link rel="stylesheet" href="../asset/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
 
-      <!-- Nav Links -->
-      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
-        <a
-          href="#"
-          class="text-[#3F0D12] font-semibold relative pb-1 border-b-2 border-[#3F0D12]"
-          >Beranda</a
-        >
-        <a
-          href="#"
-          class="text-stone-600 hover:text-[#3F0D12] transition-colors"
-          >Tentang</a
-        >
-        <a
-          href="#"
-          class="text-stone-600 hover:text-[#3F0D12] transition-colors"
-          >Kenali</a
-        >
-        <a
-          href="#"
-          class="text-stone-600 hover:text-[#3F0D12] transition-colors"
-          >Jenis Wayang</a
-        >
-        <a
-          href="#"
-          class="text-stone-600 hover:text-[#3F0D12] transition-colors"
-          >Peta Budaya</a
-        >
-        <a
-          href="#"
-          class="text-stone-600 hover:text-[#3F0D12] transition-colors"
-          >Studio Kreasi</a
-        >
-      </nav>
-
-      <!-- Search & Profile -->
-      <div class="flex items-center space-x-4">
-        <div class="relative hidden sm:block">
+<body class="bg-[#f1f0cc] font-sans text-[#3F0D12] min-h-screen selection:bg-[#3F0D12] selection:text-white">
+  <header id="site-header" class="fixed inset-x-0 top-0 z-100000">
+    <div id="header-inner"
+      class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 transition-all duration-500 md:px-10">
+      <div id="nav-pill"
+        class="nav-pill flex w-full items-center justify-between gap-2 rounded-full bg-transparent p-1.5 md:p-3">
+        <a href="#" class="flex items-center gap-2">
           <span
-            class="absolute inset-y-0 left-0 flex items-center pl-3 text-stone-400"
-          >
-            <i class="fa-solid fa-magnifying-glass text-xs"></i>
+            class="logo-mark flex h-10 w-10 items-center justify-center p-1 rounded-full bg-[#3F0D12] text-[#F1F0CC] transition-transform duration-500">
+            <img src="../asset/img/hero/icon.png" alt="" />
           </span>
-          <input
-            type="text"
-            placeholder="Search"
-            class="bg-stone-200/60 text-xs rounded-full pl-9 pr-4 py-2 focus:outline-none focus:ring-1 focus:ring-[#3F0D12] w-40"
-          />
-        </div>
-        <div
-          class="w-9 h-9 rounded-full bg-stone-300 overflow-hidden flex items-center justify-center"
-        >
-          <img src="" alt="Profile" class="w-full h-full object-cover" />
-        </div>
-      </div>
-    </header>
-
-    <section
-      id="hero"
-      class="flex-1 flex flex-col items-center justify-center px-4 py-6 max-w-7xl mx-auto w-full"
-    >
-      <div class="text-center max-w-1xl mb-10">
-        <h1
-          class="text-1xl md:text-5xl font-serif font-bold text-[#000000] leading-tight mb-1"
-        >
-          Memayu Hayuning Bawana
-        </h1>
-        <h1 class="text-1xl md:text-5xl font-serif font-bold text-[#A71D31]">
-          lumantar Seni Pakeliran Adiluhung
-        </h1>
-      </div>
-
-      <div
-        class="flex items-center justify-center w-full overflow-hidden py-6 mb-10 px-2"
-      >
-        <div
-          class="flex items-center space-x-[-25px] md:space-x-[-35px] relative"
-        >
-          <div
-            class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform -rotate-6 translate-y-4 bg-stone-800 z-10 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl"
-          >
-            <img
-              src="../asset/img/kotak hero 1.jpg"
-              alt="Wayang 1"
-              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-            />
-            <div
-              class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"
-            ></div>
-          </div>
-
-          <div
-            class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform -rotate-4 translate-y-2 bg-stone-800 z-20 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl"
-          >
-            <img
-              src="../asset/img/kotak hero 2.png"
-              alt="Wayang 2"
-              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-            />
-            <div
-              class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"
-            ></div>
-          </div>
-
-          <div
-            class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform -rotate-2 translate-y-1 bg-stone-800 z-30 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl"
-          >
-            <img
-              src="../asset/img/kotak hero 3.png"
-              alt="Wayang 3"
-              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-            />
-            <div
-              class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"
-            ></div>
-          </div>
-
-          <div
-            class="group relative w-40 h-60 md:w-52 md:h-80 rounded-2xl overflow-hidden shadow-2xl transform rotate-0 scale-105 bg-stone-800 z-40 transition-all duration-500 ease-out hover:z-50 hover:scale-115 hover:shadow-2xl"
-          >
-            <img
-              src="../asset/img/kotak hero 4.png"
-              alt="Wayang 4"
-              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-            />
-            <div
-              class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"
-            ></div>
-          </div>
-
-          <div
-            class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform rotate-2 translate-y-1 bg-stone-800 z-30 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl"
-          >
-            <img
-              src="../asset/img/kotak hero 5.png"
-              alt="Wayang 5"
-              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-            />
-            <div
-              class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"
-            ></div>
-          </div>
-
-          <div
-            class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform rotate-4 translate-y-2 bg-stone-800 z-20 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl"
-          >
-            <img
-              src="../asset/img/kotak hero 6.jpg"
-              alt="Wayang 6"
-              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-            />
-            <div
-              class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"
-            ></div>
-          </div>
-
-          <div
-            class="group relative w-36 h-52 md:w-48 md:h-72 rounded-2xl overflow-hidden shadow-xl transform rotate-6 translate-y-4 bg-stone-800 z-10 transition-all duration-500 ease-out hover:z-50 hover:scale-110 hover:rotate-0 hover:translate-y-0 hover:shadow-2xl"
-          >
-            <img
-              src="../asset/img/kotak hero 7.png"
-              alt="Wayang 7"
-              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-            />
-            <div
-              class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none"
-            ></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center max-w-xl mx-auto mb-8 px-4">
-        <p class="text-xs md:text-sm text-stone-600 font-serif leading-relaxed">
-          Wayang adalah seni pertunjukan tradisional Indonesia berbasis cerita
-          moral yang dimainkan oleh Dalang diiringi Gamelan, dan diakui UNESCO
-          sebagai warisan budaya dunia.
-        </p>
-      </div>
-
-      <div
-        class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full"
-      >
-        <a
-          href="#"
-          class="group bg-[#3F0D12] hover:bg-[#5a131b] text-white text-xs md:text-sm font-medium py-3 px-6 rounded-full shadow-md hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center space-x-2"
-        >
-          <span>Eksplorasi Tokoh & Lakon</span>
-          <i
-            class="fa-solid fa-arrow-right text-xs transform group-hover:translate-x-1 transition-transform duration-300"
-          ></i>
+          <span class="text-lg font-bold tracking-tight text-[#3F0D12]">WayangKita</span>
         </a>
 
-        <a
-          href="#"
-          class="group bg-transparent border border-[#3F0D12]/40 hover:border-[#3F0D12] hover:bg-[#3F0D12]/5 text-[#3F0D12] text-xs md:text-sm font-medium py-3 px-6 rounded-full transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center space-x-2"
-        >
-          <i
-            class="fa-solid fa-gear text-xs transform group-hover:rotate-45 transition-transform duration-300"
-          ></i>
-          <span>Studio Tatah Sungging</span>
-        </a>
+        <nav class="hidden items-center gap-6 text-sm font-medium md:flex" aria-label="Navigasi utama">
+          <a href="index.html" class="font-semibold text-[#A71D31] transition-colors duration-200">Beranda</a>
+          <a href="pelajari.html"
+            class="text-stone-600 transition-colors duration-200 hover:text-[#A71D31]">Pelajari</a>
+          <a href="canvas.html" class="text-stone-600 transition-colors duration-200 hover:text-[#A71D31]">Studio
+            Kreasi</a>
+          <a href="comunity.html"
+            class="text-stone-600 transition-colors duration-200 hover:text-[#A71D31]">Komunitas</a>
+          <a href="#contact" class="text-stone-600 transition-colors duration-200 hover:text-[#A71D31]">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-1">
+          <div id="notif-wrap" class="relative">
+            <button id="btn-notif" type="button" aria-label="Notifikasi komunitas" aria-expanded="false"
+              class="relative flex h-9 w-9 items-center justify-center rounded-full text-[#3F0D12] transition-colors duration-200 hover:bg-stone-100">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-bell preview-icon">
+                <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+                <path
+                  d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
+              </svg>
+              <span id="notif-badge" hidden
+                class="absolute right-0.5 top-0.5 grid h-4 min-w-4 place-items-center rounded-full bg-[#A71D31] px-1 text-[9px] font-bold leading-none text-white">3</span>
+            </button>
+
+            <div id="panel-notif" hidden
+              class="absolute right-0 top-11 z-50 w-[20rem] max-w-[calc(100vw-2rem)] overflow-hidden rounded-2xl border border-black/5 bg-white shadow-xl shadow-black/10 ring-1 ring-black/5">
+              <div class="flex items-center justify-between border-b border-black/5 px-4 py-3">
+                <p class="text-sm font-bold text-[#3F0D12]">Notifikasi Komunitas</p>
+                <span id="notif-jumlah" class="text-[10px] font-bold uppercase tracking-wider text-stone-500"></span>
+              </div>
+              <ul id="list-notif" class="max-h-80 overflow-y-auto"></ul>
+            </div>
+          </div>
+
+          <button type="button" aria-label="Menu profil"
+            class="flex items-center gap-1.5 rounded-full p-1 pr-1.5 transition-colors duration-200 hover:bg-stone-100">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-user preview-icon">
+              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </button>
+
+          <button id="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mobile-menu"
+            class="flex h-9 w-9 items-center justify-center rounded-full text-[#3F0D12] transition-colors duration-200 hover:bg-stone-100 md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-menu preview-icon">
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" />
+            </svg>
+          </button>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <section
-      id="about"
-      class="bg-[#f1f0cc] py-16 px-4 md:px-8 font-sans antialiased text-gray-800"
-    >
-      <div class="max-w-6xl mx-auto space-y-12">
-        <div class="text-center max-w-3xl mx-auto space-y-3">
-          <h2
-            class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-rose-950 leading-tight"
-          >
-            Menyelami Esensi & Filosofi Wayang
-          </h2>
+    <nav id="mobile-menu" aria-label="Navigasi mobile"
+      class="mx-4 mt-2 hidden rounded-2xl bg-white px-6 py-4 shadow-xl shadow-black/10 ring-1 ring-black/5 md:hidden">
+      <ul class="flex flex-col gap-1 text-sm font-medium">
+        <li>
+          <a href="index.html" class="block rounded-lg px-3 py-2.5 font-semibold text-[#A71D31]">Beranda</a>
+        </li>
+        <li>
+          <a href="pelajari.html"
+            class="block rounded-lg px-3 py-2.5 text-stone-600 transition-colors duration-200 hover:bg-stone-50 hover:text-[#A71D31]">Pelajari</a>
+        </li>
+        <li>
+          <a href="canvas.html"
+            class="block rounded-lg px-3 py-2.5 text-stone-600 transition-colors duration-200 hover:bg-stone-50 hover:text-[#A71D31]">Studio
+            Kreasi</a>
+        </li>
+        <li>
+          <a href="comunity.html"
+            class="block rounded-lg px-3 py-2.5 text-stone-600 transition-colors duration-200 hover:bg-stone-50 hover:text-[#A71D31]">Komunitas</a>
+        </li>
+        <li>
+          <a href="#contact"
+            class="block rounded-lg px-3 py-2.5 text-stone-600 transition-colors duration-200 hover:bg-stone-50 hover:text-[#A71D31]">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-          <p class="text-base md:text-lg text-gray-700 leading-relaxed pt-1">
-            Lebih dari sekadar pertunjukan, wayang adalah panduan hidup.
-            Bayangan pada kelir memantulkan keharmonisan hubungan antara
-            manusia, sesama, alam, dan Sang Pencipta.
+  <main class="pt-21">
+    <section id="hero" class=" relative min-h-[calc(100svh-5.25rem)] w-full overflow-x-clip  bg-[#f1f0cc]">
+
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-layer pointer-events-none absolute inset-0 z-0" data-depth="0.4" aria-hidden="true">
+        <img class="hero-awan hero-dof-jauh awan-anim absolute top-[15%] left-[20%] w-20 opacity-100 md:w-32"
+          src="../asset/img/tokoh-pewayangan/awan.png" alt="" />
+        <img class="hero-awan hero-dof-jauh awan-anim-2 absolute top-[25%] right-[25%] w-24 opacity-100 md:w-36"
+          src="../asset/img/tokoh-pewayangan/awan.png" alt="" />
+        <img class="hero-awan hero-dof-jauh awan-anim-3 absolute bottom-[35%] left-[45%] w-16 opacity-100 md:w-28"
+          src="../asset/img/tokoh-pewayangan/awan.png" alt="" />
+      </div>
+
+      <div class="hero-layer pointer-events-none absolute inset-0 z-10" data-depth="0.9" aria-hidden="true">
+        <img class="hero-awan hero-dof-tengah awan-anim-3 absolute top-[30%] left-[35%] w-16 opacity-100 md:w-28"
+          src="../asset/img/tokoh-pewayangan/awan.png" alt="" />
+        <img class="hero-awan hero-dof-tengah awan-anim absolute top-[45%] right-[30%] w-24 opacity-100 md:w-36"
+          src="../asset/img/tokoh-pewayangan/awan.png" alt="" />
+        <img class="hero-awan hero-dof-tengah awan-anim-2 absolute bottom-[25%] left-[15%] w-32 opacity-100 md:w-48"
+          src="../asset/img/tokoh-pewayangan/awan.png" alt="" />
+        <img class="hero-awan hero-dof-tengah awan-anim-3 absolute bottom-[30%] right-[20%] w-24 opacity-100 md:w-40"
+          src="../asset/img/tokoh-pewayangan/awan.png" alt="" />
+      </div>
+
+      <div class="hero-layer pointer-events-none absolute inset-0 z-50" data-depth="1.4" aria-hidden="true">
+
+        <div class="awan-entry absolute top-[12%] right-[22%] w-64 opacity-100 md:w-[28rem]">
+          <img class="hero-awan hero-dof-dekat awan-anim-2 w-full" src="../asset/img/tokoh-pewayangan/awan.png"
+            alt="" />
+        </div>
+
+        <div class="awan-entry absolute bottom-[15%] right-[-5%] w-[22rem] md:w-[34rem]">
+          <img class="hero-awan hero-dof-dekat awan-anim-3 w-full opacity-100"
+            src="../asset/img/tokoh-pewayangan/awan.png" alt="" />
+        </div>
+
+        <div class="awan-entry absolute bottom-[10%] left-[40%] w-56 md:w-[20rem]">
+          <img class="hero-awan hero-dof-tengah awan-anim-3 w-full opacity-100"
+            src="../asset/img/tokoh-pewayangan/awan.png" alt="" />
+        </div>
+      </div>
+      <div
+        class="relative z-50 flex flex-col-reverse md:flex-row items-center justify-between gap-12 w-full max-w-7xl mx-auto px-6 md:px-18">
+
+        <div class="flex flex-col gap-4 w-full text-center md:text-left">
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl 2xl:text-[4rem] font-bold font-serif text-tinta leading-tight 2xl:leading-[1.05] tracking-tight text-balance">
+            Wayangam
+            Asmākaṃ Saṃskṛtiḥ
+          </h1>
+          <p class="max-w-xl mx-auto md:mx-0 text-base md:text-lg text-cokelat leading-relaxed">
+            Jelajahi keindahan seni wayang Nusantara, kenali berbagai tokoh dan kisahnya, serta temukan nilai-nilai
+            budaya yang penuh makna. Bersama WayangKita, mari mengenal, mempelajari, dan melestarikan warisan budaya
+            Indonesia
           </p>
         </div>
 
-        <div
-          class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center"
-        >
-          <div class="lg:col-span-6">
-            <div
-              class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 aspect-[4/3] bg-gray-200"
-            >
-              <img
-                src=""
-                alt="Pertunjukan Wayang Kulit"
-                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-              />
-              <div
-                class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 pointer-events-none"
-              ></div>
+        <div class="w-full max-w-[16rem] md:max-w-sm shrink-0 flex justify-center items-end relative isolate">
+
+          <div class="relative -z-10 hero-kipas-flap">
+            <img class="-rotate-12 w-full h-auto drop-shadow-2xl hero-kipas" src="../asset/img/hero/kipas.png"
+              alt="Kipas Wayang">
+          </div>
+
+          <div class="absolute bottom-1 -right-18 z-20 w-[120%] pointer-events-none">
+            <img src="../asset/img/hero/awan.png" alt="" class="w-full h-auto scale-105  awan-anim-3">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section id="about-us" class="min-h-screen flex items-center justify-center p-4 md:p-8">
+      <!-- Lebar maksimal diperkecil ke max-w-5xl dan gap dikurangi -->
+      <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
+
+        <!-- Bagian Kiri: Gambar (Tinggi diperkecil) -->
+        <div class="w-full relative">
+          <img src="../asset/img/about/about.png" alt="pertunjukan wayang"
+            class="w-full h-[350px] lg:h-[480px] object-cover rounded-3xl shadow-sm">
+        </div>
+
+        <!-- Bagian Kanan: Konten -->
+        <div class="flex flex-col">
+
+          <!-- Label Who We Are -->
+          <div class="flex items-center gap-2 mb-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-red-900"></span>
+            <span class="text-marun font-bold text-[10px] md:text-xs tracking-wider uppercase">Tentang
+              Kami</span>
+          </div>
+
+          <!-- Judul Utama (Ukuran font diperkecil) -->
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-tinta leading-tight mb-5">
+            Mengenal Esensi & <br>Filosofi Wayang
+          </h2>
+
+          <!-- Navigasi Tab -->
+          <div class="flex gap-5 border-b border-gray-200 mb-5">
+            <button onclick="changeTab('tentang', this)"
+              class="tab-btn pb-2 text-marun border-b-2 border-marun font-semibold text-sm transition-all">Kenali
+              Kami</button>
+            <button onclick="changeTab('visi', this)"
+              class="tab-btn pb-2 text-gray-400 hover:text-gray-700 font-semibold text-sm transition-all border-b-2 border-transparent">Visi
+              Kami</button>
+            <button onclick="changeTab('misi', this)"
+              class="tab-btn pb-2 text-gray-400 hover:text-gray-700 font-semibold text-sm transition-all border-b-2 border-transparent">Misi
+              Kami</button>
+
+          </div>
+
+          <!-- Deskripsi Dinamis -->
+          <p id="tab-desc" class="text-cokelat text-sm leading-relaxed mb-6 min-h-[4rem]">
+            Wayang Kita adalah platform edukasi budaya yang memperkenalkan seni pewayangan Nusantara melalui
+            pembelajaran menarik dan interaktif. Kami hadir untuk mengenalkan cerita, tokoh, serta nilai luhur wayang
+            sekaligus melestarikan warisan budaya Indonesia.
+          </p>
+
+          <!-- Statistik -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6 border-t border-gray-200">
+            <div>
+              <h3 class="text-2xl font-bold text-tinta mb-0.5">5+</h3>
+              <p class="text-[11px] text-cokelat leading-tight">Tahun<br>Pengalaman</p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-tinta mb-0.5">55k+</h3>
+              <p class="text-[11px] text-cokelat leading-tight">Komunitas<br>Aktif</p>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-tinta mb-0.5">500+</h3>
+              <p class="text-[11px] text-cokelat leading-tight">Karakter<br>& Tokoh Wayang</p>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-tinta mb-0.5">18</h3>
+              <p class="text-[11px] text-cokelat leading-tight">Sanggar<br>& Balai Budaya</p>
             </div>
           </div>
 
-          <div class="lg:col-span-6 space-y-6">
-            <div class="flex border-b border-stone-300 gap-8">
-              <button
-                class="pb-3 text-base font-semibold text-rose-900 border-b-2 border-rose-900 transition-colors duration-200"
-              >
-                Misi Kami
-              </button>
-              <button
-                class="pb-3 text-base font-medium text-gray-600 hover:text-rose-900 transition-colors duration-200"
-              >
-                Keahlian Kami
-              </button>
-              <button
-                class="pb-3 text-base font-medium text-gray-600 hover:text-rose-900 transition-colors duration-200"
-              >
-                Nilai-Nilai Kami
-              </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="masalah" class="w-full bg-kertas py-10 md:py-12 font-body text-tinta antialiased">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+
+        <div class="mx-auto max-w-2xl space-y-2 text-center">
+          <div
+            class="flex items-center justify-center gap-2.5 text-marun font-bold tracking-[0.2em] text-[10px] sm:text-xs uppercase">
+            <span class="h-[2px] w-6 bg-marun"></span>
+            <span>Permasalahan</span>
+            <span class="h-[2px] w-6 bg-marun"></span>
+          </div>
+          <h2
+            class="font-display text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight tracking-tight text-tinta text-balance">
+            Wayang Mulai Jauh dari Generasi Muda
+          </h2>
+        </div>
+
+        <div id="masalah-showcase" data-running="false"
+          class="mt-6 md:mt-10 grid items-stretch gap-4 md:gap-6 lg:grid-cols-[45fr_55fr]">
+
+          <div
+            class="relative min-h-56 sm:min-h-72 lg:min-h-[400px] overflow-hidden rounded-3xl shadow-xl ring-1 ring-black/5">
+            <img class="ps-photo is-active absolute inset-0 h-full w-full object-cover"
+              src="../asset/img/problem/integrasi.png"
+              alt="Panggung pertunjukan wayang kulit dengan bayangan gunungan di layar" loading="eager"
+              decoding="async">
+            <img class="ps-photo absolute inset-0 h-full w-full object-cover" src="../asset/img/problem/media.png"
+              alt="Empu bercerita dengan anak-anak di depan wayang golek" loading="lazy" decoding="async">
+            <img class="ps-photo absolute inset-0 h-full w-full object-cover" src="../asset/img/problem/minat.png"
+              alt="Penonton muda menyaksikan pagelaran wayang kulit di pameran buku" loading="lazy" decoding="async">
+            <img class="ps-photo absolute inset-0 h-full w-full object-cover" src="../asset/img/problem/akses.png"
+              alt="Foto arsip wayang kulit tahun 1890 dari koleksi museum" loading="lazy" decoding="async">
+          </div>
+
+          <div id="masalah-panel"
+            class="ps-panel flex flex-col rounded-3xl p-6 sm:p-7 md:p-9 shadow-xl ring-1 ring-black/5">
+
+            <div class="ps-copy relative min-h-40 grow sm:min-h-44">
+
+              <div id="masalah-slide-0" class="ps-slide is-active" role="tabpanel" aria-labelledby="masalah-tab-0">
+                <h3 class="font-display text-xl font-semibold leading-snug text-tinta sm:text-2xl">
+                  Minimnya Integrasi Nilai dalam Kehidupan
+                </h3>
+                <p class="mt-3 max-w-xl text-sm leading-relaxed text-cokelat sm:text-base">
+                  Nilai moral, etika, dan kearifan lokal dalam wayang belum banyak diangkat sebagai bagian dari
+                  pendidikan.
+                </p>
+              </div>
+
+              <div id="masalah-slide-1" class="ps-slide" role="tabpanel" aria-labelledby="masalah-tab-1">
+                <h3 class="font-display text-xl font-semibold leading-snug text-tinta sm:text-2xl">
+                  Terbatasnya Media Pembelajaran
+                </h3>
+                <p class="mt-3 max-w-xl text-sm leading-relaxed text-cokelat sm:text-base">
+                  Materi pembelajaran wayang masih banyak bersifat konvensional dan belum memaksimalkan teknologi.
+                </p>
+              </div>
+
+              <div id="masalah-slide-2" class="ps-slide" role="tabpanel" aria-labelledby="masalah-tab-2">
+                <h3 class="font-display text-xl font-semibold leading-snug text-tinta sm:text-2xl">
+                  Kurangnya Minat Generasi Muda
+                </h3>
+                <p class="mt-3 max-w-xl text-sm leading-relaxed text-cokelat sm:text-base">
+                  Generasi muda lebih tertarik pada hiburan digital sehingga wayang kerap dianggap kurang relevan.
+                </p>
+              </div>
+
+              <div id="masalah-slide-3" class="ps-slide" role="tabpanel" aria-labelledby="masalah-tab-3">
+                <h3 class="font-display text-xl font-semibold leading-snug text-tinta sm:text-2xl">
+                  Kurangnya Akses Informasi
+                </h3>
+                <p class="mt-3 max-w-xl text-sm leading-relaxed text-cokelat sm:text-base">
+                  Tidak semua orang mudah menemukan informasi yang interaktif tentang tokoh dan nilai dalam wayang.
+                </p>
+              </div>
+
             </div>
 
-            <p class="text-gray-800 leading-relaxed text-base">
-              Menghidupkan kembali kisah wayang sebagai media edukasi interaktif
-              yang menanamkan nilai moral, etika, dan kearifan lokal demi
-              memperkuat karakter bangsa serta melestarikan warisan budaya.
+            <div role="tablist" aria-label="Daftar permasalahan wayang"
+              class="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 sm:grid-cols-4 sm:gap-3">
+
+              <button id="masalah-tab-0" type="button" role="tab" data-index="0" aria-selected="true"
+                aria-controls="masalah-slide-0" class="ps-tab flex cursor-pointer flex-col gap-2 text-left">
+                <span class="ps-label text-[13px] font-semibold tracking-wide transition-colors duration-200">Integrasi
+                  Nilai</span>
+                <span class="ps-bar"><span class="ps-fill"></span></span>
+              </button>
+
+              <button id="masalah-tab-1" type="button" role="tab" data-index="1" aria-selected="false"
+                aria-controls="masalah-slide-1" class="ps-tab flex cursor-pointer flex-col gap-2 text-left">
+                <span class="ps-label text-[13px] font-semibold tracking-wide transition-colors duration-200">Media
+                  Belajar</span>
+                <span class="ps-bar"><span class="ps-fill"></span></span>
+              </button>
+
+              <button id="masalah-tab-2" type="button" role="tab" data-index="2" aria-selected="false"
+                aria-controls="masalah-slide-2" class="ps-tab flex cursor-pointer flex-col gap-2 text-left">
+                <span class="ps-label text-[13px] font-semibold tracking-wide transition-colors duration-200">Minat
+                  Generasi</span>
+                <span class="ps-bar"><span class="ps-fill"></span></span>
+              </button>
+
+              <button id="masalah-tab-3" type="button" role="tab" data-index="3" aria-selected="false"
+                aria-controls="masalah-slide-3" class="ps-tab flex cursor-pointer flex-col gap-2 text-left">
+                <span class="ps-label text-[13px] font-semibold tracking-wide transition-colors duration-200">Akses
+                  Informasi</span>
+                <span class="ps-bar"><span class="ps-fill"></span></span>
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="solusi"
+      class="w-full bg-[#F8F6F3] text-[#1a1a1a] font-body selection:bg-black selection:text-white relative">
+      <div class="max-w-7xl mx-auto px-6 pt-32 pb-24 flex relative">
+
+        <aside class="hidden lg:block w-1/4 shrink-0 relative">
+          <div class="sticky top-32 space-y-4 text-sm text-gray-400">
+            <h1 class="text-xl text-black font-bold font-serif">Solusi Pelestarian</h1>
+            <a href="#step-1" class="block sidebar-link transition-colors duration-300" data-target="step-1">Kenali</a>
+            <a href="#step-2" class="block sidebar-link transition-colors duration-300"
+              data-target="step-2">Memperkenalkan </a>
+            <a href="#step-3" class="block sidebar-link transition-colors duration-300"
+              data-target="step-3">Berpartisipasi</a>
+            <a href="#step-4" class="block sidebar-link transition-colors duration-300"
+              data-target="step-4">Kembangkan</a>
+            <a href="#step-5" class="block sidebar-link transition-colors duration-300" data-target="step-5">Ikuti</a>
+          </div>
+        </aside>
+
+        <div class="w-full lg:w-3/4">
+          <div>
+
+            <div id="step-1"
+              class="step-content min-h-[80vh] mb-32 flex flex-col md:flex-row items-center gap-12 relative pt-20 -mt-20">
+              <div class="md:w-1/2 flex flex-col justify-center">
+                <span class="font-display text-[5rem] text-black/10 leading-none italic block mb-4">01</span>
+                <h2 class="text-3xl font-medium mb-4 font-serif">Kenali Dan Pelajari</h2>
+                <p class="text-gray-500 text-lg leading-relaxed">
+                  Pahami lebih dalam mengenai sejarah, filosofi, dan nilai-nilai luhur yang terkandung dalam seni
+                  pewayangan. Kami memfasilitasi Anda untuk belajar langsung dari para empu, dalang, dan pengrajin
+                  wayang tradisional berpengalaman.
+                </p>
+                <a href="pelajari.html"
+                  class="solusi-cta mt-6 inline-flex items-center gap-2 text-sm font-semibold text-marun">
+                  Mulai Pelajari
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+              <div class="md:w-1/2 w-full rounded-3xl overflow-hidden aspect-video shadow-md">
+                <img src="../asset/img/solusion/Finishing Touch.jpg" alt="Ilustrasi belajar wayang"
+                  class="w-full h-full object-cover">
+              </div>
+            </div>
+
+            <div id="step-2"
+              class="step-content min-h-[80vh] mb-32 flex flex-col md:flex-row items-center gap-12 relative pt-20 -mt-20">
+              <div class="md:w-1/2 flex flex-col justify-center">
+                <span class="font-display text-[5rem] text-black/10 leading-none italic block mb-4">02</span>
+                <h2 class="text-3xl font-medium mb-4 font-serif">Memperkenalkan Kepada Khalayak</h2>
+                <p class="text-gray-500 text-lg leading-relaxed">
+                  Bawa pesona wayang ke panggung yang lebih luas. Kami membantu Anda merancang pementasan atau pameran
+                  edukatif yang menarik bagi generasi muda dan audiens modern, tanpa menghilangkan esensi pakem
+                  tradisionalnya.
+                </p>
+                <a href="#event"
+                  class="solusi-cta mt-6 inline-flex items-center gap-2 text-sm font-semibold text-marun">
+                  Lihat Jadwal Event
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+              <div class="md:w-1/2 w-full rounded-3xl overflow-hidden aspect-video shadow-md">
+                <img src="../asset/img/solusion/Wayang golek_.jpg" alt="Ilustrasi belajar wayang"
+                  class="w-full h-full object-cover">
+              </div>
+            </div>
+
+            <div id="step-3"
+              class="step-content min-h-[80vh] mb-32 flex flex-col md:flex-row items-center gap-12 relative pt-20 -mt-20">
+              <div class="md:w-1/2 flex flex-col justify-center">
+                <span class="font-display text-[5rem] text-black/10 leading-none italic block mb-4">03</span>
+                <h2 class="text-3xl font-medium mb-4 font-serif">Berpartisipasi Dalam Kegiatan Budaya</h2>
+                <p class="text-gray-500 text-lg leading-relaxed">
+                  Terlibatlah secara langsung dalam festival seni, ruwatan, dan pagelaran budaya di berbagai daerah. Ini
+                  adalah langkah nyata Anda untuk menjaga tradisi wayang tetap hidup dan relevan di tengah arus
+                  modernisasi.
+                </p>
+                <a href="comunity.html"
+                  class="solusi-cta mt-6 inline-flex items-center gap-2 text-sm font-semibold text-marun">
+                  Cari Komunitas
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+              <div class="md:w-1/2 w-full rounded-3xl overflow-hidden aspect-video shadow-md">
+                <img src="../asset/img/solusion/partisipasi.jpg" alt="Ilustrasi pagelaran budaya"
+                  class="w-full h-full object-cover">
+              </div>
+            </div>
+
+            <div id="step-4"
+              class="step-content min-h-[80vh] mb-32 flex flex-col md:flex-row items-center gap-12 relative pt-20 -mt-20">
+
+              <div class="md:w-1/2 flex flex-col justify-center">
+                <span class="font-display text-[5rem] text-black/10 leading-none italic block mb-4">04</span>
+                <h2 class="text-3xl font-medium mb-4 font-serif">Mengembangkan Karya-karya</h2>
+                <p class="text-gray-500 text-lg leading-relaxed">
+                  Kreasikan bentuk, cerita, maupun media pewayangan yang inovatif. Kami mendukung eksplorasi pelestarian
+                  Anda, mulai dari merancang lakon carangan (kisah baru) hingga adaptasi wayang kontemporer yang tetap
+                  berpijak pada akar budaya.
+                </p>
+                <a href="canvas.html"
+                  class="solusi-cta mt-6 inline-flex items-center gap-2 text-sm font-semibold text-marun">
+                  Coba di Studio Kreasi
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+              <div class="md:w-1/2 w-full rounded-3xl overflow-hidden aspect-video shadow-md">
+                <img src="../asset/img/solusion/kembang.jpg" alt="Ilustrasi karya seni wayang"
+                  class="w-full h-full object-cover">
+              </div>
+            </div>
+
+            <div id="step-5"
+              class="step-content min-h-[60vh] mb-32 flex flex-col md:flex-row items-center gap-12 relative pt-20 -mt-20">
+              <div class="md:w-1/2 flex flex-col justify-center">
+                <span class="font-display text-[5rem] text-black/10 leading-none italic block mb-4">05</span>
+                <h2 class="text-3xl font-medium mb-4 font-serif">Bergabung Dalam Komunitas</h2>
+                <p class="text-gray-500 text-lg leading-relaxed">
+                  Jadilah bagian dari paguyuban pecinta dan pelestari wayang. Bersama seniman, budayawan, dan generasi
+                  muda lainnya, mari berkolaborasi menjaga warisan mahakarya Nusantara ini agar tak lekang oleh waktu.
+                </p>
+                <a href="comunity.html"
+                  class="solusi-cta mt-6 inline-flex items-center gap-2 text-sm font-semibold text-marun">
+                  Gabung Sekarang
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+              <div class="md:w-1/2 w-full rounded-3xl overflow-hidden aspect-video shadow-md">
+                <img src="../asset/img/solusion/gabung.jpg" alt="Ilustrasi komunitas budaya"
+                  class="w-full h-full object-cover">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="event" class="w-full border-b border-black/5 bg-[#F8F6F3] text-[#1a1a1a] font-body relative">
+
+      <div class="max-w-6xl mx-auto px-6  pb-28">
+        <div class="mx-auto mb-14 max-w-2xl text-center">
+          <span class="text-xs font-semibold uppercase tracking-[0.25em] text-[#A71D31]">Agenda Budaya</span>
+          <h2 class="font-display mt-3 text-4xl font-medium md:text-5xl">Jadwal Event</h2>
+          <p class="mt-4 text-gray-500">
+            Ikuti dan hadiri langsung berbagai acara seni pewayangan — pagelaran, festival, ruwatan, hingga
+            pameran — untuk terus menjaga tradisi tetap hidup di tengah arus modernisasi.
+          </p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2">
+          <article
+            class="flex items-start gap-4 rounded-2xl border border-black/5 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:gap-5 md:p-6">
+            <div
+              class="flex w-24 shrink-0 flex-col items-center justify-center rounded-2xl bg-slate-100 px-3 py-4 text-center md:w-28">
+              <span class="text-[11px] font-semibold uppercase tracking-wider whitespace-nowrap text-[#721C24]">Hari
+                Ini</span>
+              <span class="mt-1 text-2xl font-semibold whitespace-nowrap text-[#3F0D12]">19:00</span>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="font-display text-lg font-semibold">Pagelaran Wayang Kulit "Malam 1 Suro"
+              </h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-gray-500 line-clamp-2">
+                Persembahan pagelaran wayang kulit dengan lakon Murwakala sebagai rangkaian ritual malam satu suro
+                di alun-alun utara keraton.
+              </p>
+              <div class="mt-4 flex items-center justify-between gap-3">
+                <span class="inline-flex items-center gap-1.5 text-xs whitespace-nowrap text-gray-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-[#A71D31]" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  Yogyakarta
+                </span>
+                <button type="button"
+                  class="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-black/10 px-3.5 py-2 text-xs font-medium transition-colors duration-200 hover:border-black hover:bg-black hover:text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14" />
+                    <path d="M12 5v14" />
+                  </svg>
+                  Tambah ke Kalender
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="flex items-start gap-4 rounded-2xl border border-black/5 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:gap-5 md:p-6">
+            <div
+              class="flex w-24 shrink-0 flex-col items-center justify-center rounded-2xl bg-slate-100 px-3 py-4 text-center md:w-28">
+              <span class="text-[11px] font-semibold uppercase tracking-wider whitespace-nowrap text-[#7A5A13]">22 – 23
+                Okt</span>
+              <span class="mt-1 text-2xl font-semibold whitespace-nowrap text-[#3F0D12]">10:00</span>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="font-display text-lg font-semibold">Ruwatan &amp; Kirab Wayang</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-gray-500 line-clamp-2">
+                Deretan ritual ruwatan bumi dan kirab ratusan wayang melintasi kota sebagai doa menuju pagelaran
+                inti di panggung terbuka.
+              </p>
+              <div class="mt-4 flex items-center justify-between gap-3">
+                <span class="inline-flex items-center gap-1.5 text-xs whitespace-nowrap text-gray-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-[#A71D31]" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  Surakarta
+                </span>
+                <button type="button"
+                  class="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-black/10 px-3.5 py-2 text-xs font-medium transition-colors duration-200 hover:border-black hover:bg-black hover:text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14" />
+                    <path d="M12 5v14" />
+                  </svg>
+                  Tambah ke Kalender
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="flex items-start gap-4 rounded-2xl border border-black/5 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:gap-5 md:p-6">
+            <div
+              class="flex w-24 shrink-0 flex-col items-center justify-center rounded-2xl bg-slate-100 px-3 py-4 text-center md:w-28">
+              <span class="text-[11px] font-semibold uppercase tracking-wider whitespace-nowrap text-[#3F5A2C]">13 – 15
+                Nov</span>
+              <span class="mt-1 text-2xl font-semibold whitespace-nowrap text-[#3F0D12]">19:00</span>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="font-display text-lg font-semibold">Festival Wayang Kita</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-gray-500 line-clamp-2">
+                Tiga hari festival kolaborasi peserta dari berbagai daerah: pagelaran, paseban karya dalang muda,
+                dan pameran dengan kurator seni.
+              </p>
+              <div class="mt-4 flex items-center justify-between gap-3">
+                <span class="inline-flex items-center gap-1.5 text-xs whitespace-nowrap text-gray-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-[#A71D31]" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  Semarang
+                </span>
+                <button type="button"
+                  class="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-black/10 px-3.5 py-2 text-xs font-medium transition-colors duration-200 hover:border-black hover:bg-black hover:text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14" />
+                    <path d="M12 5v14" />
+                  </svg>
+                  Tambah ke Kalender
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="flex items-start gap-4 rounded-2xl border border-black/5 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:gap-5 md:p-6">
+            <div
+              class="flex w-24 shrink-0 flex-col items-center justify-center rounded-2xl bg-slate-100 px-3 py-4 text-center md:w-28">
+              <span class="text-[11px] font-semibold uppercase tracking-wider whitespace-nowrap text-[#721C24]">13 – 31
+                Des</span>
+              <span class="mt-1 text-2xl font-semibold whitespace-nowrap text-[#3F0D12]">17:00</span>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="font-display text-lg font-semibold">Pameran Wayang Mini</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-gray-500 line-clamp-2">
+                Pameran wayang karya-karya belia lintas rumah dan sekolah wayang, mulai dari wayang golek hingga
+                wayang kertas (wayang gedawang).
+              </p>
+              <div class="mt-4 flex items-center justify-between gap-3">
+                <span class="inline-flex items-center gap-1.5 text-xs whitespace-nowrap text-gray-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-[#A71D31]" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  Bandung
+                </span>
+                <button type="button"
+                  class="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-black/10 px-3.5 py-2 text-xs font-medium transition-colors duration-200 hover:border-black hover:bg-black hover:text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14" />
+                    <path d="M12 5v14" />
+                  </svg>
+                  Tambah ke Kalender
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="flex items-start gap-4 rounded-2xl border border-black/5 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:gap-5 md:p-6">
+            <div
+              class="flex w-24 shrink-0 flex-col items-center justify-center rounded-2xl bg-slate-100 px-3 py-4 text-center md:w-28">
+              <span class="text-[11px] font-semibold uppercase tracking-wider whitespace-nowrap text-[#7A5A13]">05 – 06
+                Jan</span>
+              <span class="mt-1 text-2xl font-semibold whitespace-nowrap text-[#3F0D12]">09:00</span>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="font-display text-lg font-semibold">Workshop Batik Motif Wayang</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-gray-500 line-clamp-2">
+                Belajar menggambar motif wayang bersama empu batik, mulai dari mencanting pola dasar hingga
+                pewarnaan alami dengan alat sederhana.
+              </p>
+              <div class="mt-4 flex items-center justify-between gap-3">
+                <span class="inline-flex items-center gap-1.5 text-xs whitespace-nowrap text-gray-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-[#A71D31]" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  Yogyakarta
+                </span>
+                <button type="button"
+                  class="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-black/10 px-3.5 py-2 text-xs font-medium transition-colors duration-200 hover:border-black hover:bg-black hover:text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14" />
+                    <path d="M12 5v14" />
+                  </svg>
+                  Tambah ke Kalender
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="flex items-start gap-4 rounded-2xl border border-black/5 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:gap-5 md:p-6">
+            <div
+              class="flex w-24 shrink-0 flex-col items-center justify-center rounded-2xl bg-slate-100 px-3 py-4 text-center md:w-28">
+              <span class="text-[11px] font-semibold uppercase tracking-wider whitespace-nowrap text-[#3F5A2C]">20 – 21
+                Feb</span>
+              <span class="mt-2 text-2xl font-semibold whitespace-nowrap text-[#3F0D12]">16:00</span>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="font-display text-lg font-semibold">Kompetisi Lakon Carangan</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-gray-500 line-clamp-2">
+                Panggung bersama para perupa dan dalang muda menuang lakon carangan terbaru yang memadukan
+                tradisi dan isu kekinian.
+              </p>
+              <div class="mt-4 flex items-center justify-between gap-3">
+                <span class="inline-flex items-center gap-1.5 text-xs whitespace-nowrap text-gray-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-[#A71D31]" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  Malang
+                </span>
+                <button type="button"
+                  class="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-black/10 px-3.5 py-2 text-xs font-medium transition-colors duration-200 hover:border-black hover:bg-black hover:text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14" />
+                    <path d="M12 5v14" />
+                  </svg>
+                  Tambah ke Kalender
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="w-full relative bg-[#F8F6F3] font-body text-tinta">
+      <div class="mx-auto grid max-w-6xl gap-12 px-6 pt-18 pb-50 md:grid-cols-[1fr_2.2fr] md:gap-16">
+
+        <div class="self-start md:sticky md:top-32">
+          <span class="text-xs font-semibold uppercase tracking-[0.25em] text-marun">Bantuan</span>
+          <h2 class="mt-3 font-display text-5xl font-semibold leading-none text-tinta md:text-6xl">FAQ</h2>
+          <p class="mt-5 max-w-xs text-base leading-relaxed text-cokelat">
+            Hal-hal yang paling sering ditanyakan sebelum bergabung bersama komunitas WayangKita.
+          </p>
+        </div>
+
+        <div class="border-t border-mut">
+          <div class="faq-item border-b border-mut" data-open="false">
+            <button type="button" aria-expanded="false"
+              class="faq-q flex w-full cursor-pointer items-center justify-between gap-6 py-5 text-left">
+              <span class="text-base font-medium text-tinta md:text-lg">Apakah bergabung di WayangKita berbayar?</span>
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="faq-chevron h-5 w-5 shrink-0 text-tinta transition-transform duration-300" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            <div class="faq-a" aria-hidden="true">
+              <div class="overflow-hidden">
+                <p class="max-w-2xl pb-5 text-base leading-relaxed text-cokelat">
+                  Tidak, gratis. Pusat edukasi, Studio Kreasi, dan komunitas terbuka untuk semua orang. Hanya beberapa
+                  pagelaran atau festival tertentu yang dikenakan tiket, dan informasinya selalu kami tampilkan pada
+                  bagian Jadwal Event.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item border-b border-mut" data-open="false">
+            <button type="button" aria-expanded="false"
+              class="faq-q flex w-full cursor-pointer items-center justify-between gap-6 py-5 text-left">
+              <span class="text-base font-medium text-tinta md:text-lg">Saya belum punya pengalaman seni, apakah tetap
+                bisa ikut?</span>
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="faq-chevron h-5 w-5 shrink-0 text-tinta transition-transform duration-300" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            <div class="faq-a" aria-hidden="true">
+              <div class="overflow-hidden">
+                <p class="max-w-2xl pb-5 text-base leading-relaxed text-cokelat">
+                  Tentu bisa. Mayoritas anggota justru memulai sebagai pengamat yang penasaran. Para empu dan dalang
+                  berpengalaman akan membimbing langkah demi langkah, jadi Anda bisa belajar sambil menikmati
+                  prosesnya tanpa perlu menghafal teori.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item border-b border-mut" data-open="false">
+            <button type="button" aria-expanded="false"
+              class="faq-q flex w-full cursor-pointer items-center justify-between gap-6 py-5 text-left">
+              <span class="text-base font-medium text-tinta md:text-lg">Bagaimana cara mulai mempelajari wayang di
+                sini?</span>
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="faq-chevron h-5 w-5 shrink-0 text-tinta transition-transform duration-300" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            <div class="faq-a" aria-hidden="true">
+              <div class="overflow-hidden">
+                <p class="max-w-2xl pb-5 text-base leading-relaxed text-cokelat">
+                  Mulai dari bagian <a href="pelajari.html"
+                    class="font-semibold text-marun hover:underline">Pelajari</a>
+                  untuk mengenal sejarah, jenis wayang, dan tokohnya. Setelah itu Anda bisa mencoba menggambar di
+                  Studio Kreasi, lalu berdiskusi di Komunitas — jalur belajar yang saling terhubung dan bisa
+                  disesuaikan dengan kecepatan Anda.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item border-b border-mut" data-open="false">
+            <button type="button" aria-expanded="false"
+              class="faq-q flex w-full cursor-pointer items-center justify-between gap-6 py-5 text-left">
+              <span class="text-base font-medium text-tinta md:text-lg">Apakah kegiatannya hanya tersedia di daerah
+                tertentu?</span>
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="faq-chevron h-5 w-5 shrink-0 text-tinta transition-transform duration-300" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            <div class="faq-a" aria-hidden="true">
+              <div class="overflow-hidden">
+                <p class="max-w-2xl pb-5 text-base leading-relaxed text-cokelat">
+                  Jaringan anggota kami tersebar di berbagai provinsi, sehingga pagelaran, ruwatan, dan workshop bisa
+                  muncul di daerah mana pun. Sementara fitur online — Pelajari, Studio Kreasi, dan forum Komunitas —
+                  bisa Anda pakai dari mana saja.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item border-b border-mut" data-open="false">
+            <button type="button" aria-expanded="false"
+              class="faq-q flex w-full cursor-pointer items-center justify-between gap-6 py-5 text-left">
+              <span class="text-base font-medium text-tinta md:text-lg">Saya bukan seniman, boleh ikut pagelaran atau
+                pameran?</span>
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="faq-chevron h-5 w-5 shrink-0 text-tinta transition-transform duration-300" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            <div class="faq-a" aria-hidden="true">
+              <div class="overflow-hidden">
+                <p class="max-w-2xl pb-5 text-base leading-relaxed text-cokelat">
+                  Sangat boleh. Setiap pagelaran dan pameran butuh banyak peran di luar panggung: penata ruang,
+                  juru kamera, penerima tamu, hingga dokumentasi. Sebutkan preferensi Anda saat bergabung, kami
+                  yang menghubungkan dengan kelompok yang tepat.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item border-b border-mut" data-open="false">
+            <button type="button" aria-expanded="false"
+              class="faq-q flex w-full cursor-pointer items-center justify-between gap-6 py-5 text-left">
+              <span class="text-base font-medium text-tinta md:text-lg">Bagaimana cara mendukung pelestarian tanpa
+                harus tampil di panggung?</span>
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="faq-chevron h-5 w-5 shrink-0 text-tinta transition-transform duration-300" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            <div class="faq-a" aria-hidden="true">
+              <div class="overflow-hidden">
+                <p class="max-w-2xl pb-5 text-base leading-relaxed text-cokelat">
+                  Menyebarkan cerita, membagikan karya di media sosial, menghadiri pameran, atau sekadar mengajak
+                  keluarga dan teman mencintai wayang — semua itu dukungan nyata. Tradisi tetap hidup selama masih
+                  ada yang menyebutkannya.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="bergabung" class="w-full overflow-x-clip bg-[#F8F6F3] font-body relative">
+      <div class="mx-auto max-w-7xl px-4 pb-28 pt-4 md:px-6">
+        <div class="relative px-6 py-16 rounded-[2.5rem] bg-[#F1E9DA] md:px-14 md:py-20">
+
+          <div
+            class="pointer-events-none absolute inset-0 rounded-[2.5rem] bg-[radial-gradient(circle_at_20%_20%,rgba(168,120,74,0.12),transparent_55%),radial-gradient(circle_at_85%_80%,rgba(63,13,18,0.10),transparent_50%)]">
+          </div>
+          <div class="relative z-10 md:max-w-[58%]">
+            <span class="text-xs font-semibold uppercase tracking-[0.25em] text-[#A71D31]">Bergabung Sekarang</span>
+            <h2 class="mt-3 font-display text-4xl font-semibold leading-tight text-[#3F0D12] md:text-5xl">
+              WayangKita, <span class="italic">rumahmu</span> menjaga warisan budaya.
+            </h2>
+            <p class="mt-5 max-w-md text-base leading-relaxed text-[#3F0D12]/70">
+              Bergabung bersama para dalang, seniman, dan pecinta wayang dari berbagai daerah — atau jelajahi fitur
+              unggulan seperti Studio Kreasi dan Peta Budaya.
             </p>
 
-            <div
-              class="grid grid-cols-3 gap-4 pt-2 border-t border-stone-300/60"
-            >
-              <div>
-                <div
-                  class="text-2xl md:text-3xl font-serif font-bold text-rose-900"
-                >
-                  500+
-                </div>
-                <p
-                  class="text-xs md:text-sm text-gray-700 font-medium leading-snug mt-1"
-                >
-                  Tokoh & Karakter Wayang
-                </p>
-              </div>
-              <div>
-                <div
-                  class="text-2xl md:text-3xl font-serif font-bold text-rose-900"
-                >
-                  120+
-                </div>
-                <p
-                  class="text-xs md:text-sm text-gray-700 font-medium leading-snug mt-1"
-                >
-                  Naskah Pakeliran Klasik
-                </p>
-              </div>
-              <div>
-                <div
-                  class="text-2xl md:text-3xl font-serif font-bold text-rose-900"
-                >
-                  18
-                </div>
-                <p
-                  class="text-xs md:text-sm text-gray-700 font-medium leading-snug mt-1"
-                >
-                  Sanggar & Balai Budaya
-                </p>
-              </div>
-            </div>
-
-            <div class="pt-2">
-              <a
-                href="#"
-                class="group inline-flex items-center justify-center px-6 py-3 bg-rose-900 hover:bg-rose-950 text-white font-medium text-sm rounded-lg transition-all duration-300 ease-out shadow-md hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0"
-              >
-                <span>Pelajari Selengkapnya</span>
-                <svg
-                  class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
+            <div class="mt-8 flex flex-wrap items-center gap-3">
+              <a href="comunity.html"
+                class="inline-flex items-center gap-2 rounded-full bg-[#3F0D12] px-7 py-3.5 text-sm font-semibold text-[#E8DACC] transition-all duration-200 hover:bg-[#5A2A1E] hover:shadow-lg hover:shadow-[#3F0D12]/20">
+                Bergabung ke Komunitas
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
                 </svg>
+              </a>
+              <a href="#solusi"
+                class="inline-flex items-center gap-2 rounded-full border border-[#3F0D12]/20 px-7 py-3.5 text-sm font-semibold text-[#3F0D12] transition-all duration-200 hover:border-[#3F0D12] hover:bg-white/60">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+                </svg>
+                Jelajahi Fitur
               </a>
             </div>
           </div>
+          <div
+            class="mt-10 flex justify-center md:mt-0 md:absolute md:bottom-0 md:w-64 md:items-end lg:right-16 lg:w-80 pointer-events-none select-none relative z-10">
+
+            <div class="awan-entry absolute bottom-0 right-26 w-[22rem] md:w-[34rem]">
+              <img class="hero-awan hero-dof-dekat awan-anim-3 w-full opacity-100"
+                src="../asset/img/tokoh-pewayangan/awan.png" alt="" />
+            </div>
+            <div class="awan-entry absolute top-0 -right-30 w-[22rem] md:w-[34rem]">
+              <img class="hero-awan hero-dof-dekat awan-anim-3 w-full opacity-100"
+                src="../asset/img/tokoh-pewayangan/awan.png" alt="" />
+            </div>
+            <img src="../asset/img/tokoh-pewayangan/arjuna.png" alt="Wayang kulit tokoh Arjuna"
+              class="relative z-10 h-full max-h-none w-auto object-contain origin-bottom scale-115 drop-shadow-2xl">
+          </div>
+
         </div>
       </div>
     </section>
 
-    <section
-      id="ragam-jenis"
-      class="relative w-full min-h-screen overflow-hidden flex flex-col justify-between bg-[#F1F0CC] font-sans antialiased selection:bg-[#3F0D12] selection:text-[#F1F0CC]"
-    >
-      <header
-        class="relative z-30 flex items-center justify-between px-6 sm:px-12 py-6 w-full max-w-7xl mx-auto"
-      >
-        <div class="flex items-center gap-4">
-          <button
-            id="back-btn"
-            onclick="closeDetail()"
-            class="opacity-0 pointer-events-none -translate-x-4 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-[#F1F0CC] hover:opacity-75 bg-[#A71D31] px-4 py-2 rounded-full shadow-md"
-          >
-            <svg
-              class="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2.5"
-                d="M10 19l-7-7m0 0l7-7m-7 7h18"
-              ></path>
-            </svg>
-            Kembali
-          </button>
+  </main>
 
-          <a
-            href="#"
-            id="brand-logo"
-            class="text-xl font-black tracking-tight text-[#3F0D12] transition-colors duration-700"
-          >
-            WayangKita
-          </a>
-        </div>
-      </header>
+  <footer id="contact" class="bg-[#3F0D12] pt-12 pb-8 px-6 md:px-12 lg:px-16 relative overflow-hidden">
+    <div class="mx-auto grid max-w-6xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1.25fr_0.7fr_1fr] lg:gap-16">
+      <div>
+        <a href="#beranda" class="mb-3 inline-flex items-center gap-2 text-[#e8dacc]">
+          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#3F0D12] shadow-sm">
+            <img src="../asset/img/hero/icon.png" alt="" />
+          </span>
 
-      <main
-        class="relative z-20 flex-1 flex w-full h-full max-w-7xl mx-auto px-4 sm:px-8 py-4"
-      >
-        <div
-          id="cards-wrapper"
-          class="w-full h-full flex flex-col md:flex-row gap-5 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]"
-        >
-          <div
-            onclick="selectCard(0)"
-            data-index="0"
-            class="card-item group relative flex-1 rounded-3xl cursor-pointer overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[#D5BF86]/20 hover:bg-[#3F0D12] shadow-sm hover:shadow-2xl border border-[#D5BF86]/60 flex flex-col justify-between p-6 sm:p-8"
-          >
-            <div
-              class="card-bg absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out bg-[#3F0D12]"
-            ></div>
+          <span class="font-wayang text-2xl font-bold"> WayangKita </span>
+        </a>
 
-            <div
-              class="giant-text absolute inset-0 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform scale-90 select-none"
-            >
-              <span
-                class="text-[16vw] font-black leading-none text-[#F1F0CC]/10 tracking-tighter uppercase"
-                >Wayang Kulit</span
-              >
-            </div>
-
-            <div class="relative z-10 flex flex-col justify-between h-full">
-              <div>
-                <span
-                  class="card-number text-xs font-bold tracking-widest text-[#8D775F] group-hover:text-[#A71D31] transition-colors duration-500"
-                  >01</span
-                >
-                <h2
-                  class="card-title text-2xl sm:text-3xl font-extrabold tracking-tight text-[#3F0D12] group-hover:text-[#F1F0CC] transition-colors duration-500 mt-2"
-                >
-                  Wayang Kulit
-                </h2>
-                <p
-                  class="card-subtext text-xs font-medium text-[#8D775F] group-hover:text-[#F1F0CC]/80 transition-colors duration-500 mt-1"
-                >
-                  Subtext
-                </p>
-              </div>
-
-              <div
-                class="image-container relative my-auto py-4 flex justify-center items-center h-44 sm:h-60 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
-              >
-                <img
-                  src="../asset/img/wayang kulit.jpg"
-                  alt="Foto Wayang Kulit"
-                  class="product-img h-full object-contain filter drop-shadow-xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] opacity-0 group-hover:opacity-100 group-hover:scale-105 transform"
-                />
-              </div>
-
-              <div
-                class="cta-wrapper relative z-10 pt-2 flex items-center justify-between"
-              >
-                <button
-                  class="card-btn px-5 py-2.5 rounded-full text-xs font-bold bg-[#3F0D12] text-[#F1F0CC] group-hover:bg-[#A71D31] transition-all duration-500 flex items-center gap-2 shadow-md"
-                >
-                  <span>View more</span>
-                  <svg
-                    class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform duration-300"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5l7 7-7 7"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div
-            onclick="selectCard(1)"
-            data-index="1"
-            class="card-item group relative flex-1 rounded-3xl cursor-pointer overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[#D5BF86]/20 hover:bg-[#3F0D12] shadow-sm hover:shadow-2xl border border-[#D5BF86]/60 flex flex-col justify-between p-6 sm:p-8"
-          >
-            <div
-              class="card-bg absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out bg-[#3F0D12]"
-            ></div>
-
-            <div
-              class="giant-text absolute inset-0 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform scale-90 select-none"
-            >
-              <span
-                class="text-[16vw] font-black leading-none text-[#F1F0CC]/10 tracking-tighter uppercase"
-                >Wayang Golek</span
-              >
-            </div>
-
-            <div class="relative z-10 flex flex-col justify-between h-full">
-              <div>
-                <span
-                  class="card-number text-xs font-bold tracking-widest text-[#8D775F] group-hover:text-[#A71D31] transition-colors duration-500"
-                  >02</span
-                >
-                <h2
-                  class="card-title text-2xl sm:text-3xl font-extrabold tracking-tight text-[#3F0D12] group-hover:text-[#F1F0CC] transition-colors duration-500 mt-2"
-                >
-                  Wayang Golek
-                </h2>
-                <p
-                  class="card-subtext text-xs font-medium text-[#8D775F] group-hover:text-[#F1F0CC]/80 transition-colors duration-500 mt-1"
-                >
-                  Subtext
-                </p>
-              </div>
-
-              <div
-                class="image-container relative my-auto py-4 flex justify-center items-center h-44 sm:h-60 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
-              >
-                <img
-                  src=""
-                  alt="Foto Wayang Golek"
-                  class="product-img h-full object-contain filter drop-shadow-xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] opacity-0 group-hover:opacity-100 group-hover:scale-105 transform"
-                />
-              </div>
-
-              <div
-                class="cta-wrapper relative z-10 pt-2 flex items-center justify-between"
-              >
-                <button
-                  class="card-btn px-5 py-2.5 rounded-full text-xs font-bold bg-[#3F0D12] text-[#F1F0CC] group-hover:bg-[#A71D31] transition-all duration-500 flex items-center gap-2 shadow-md"
-                >
-                  <span>View more</span>
-                  <svg
-                    class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform duration-300"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5l7 7-7 7"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div
-            onclick="selectCard(2)"
-            data-index="2"
-            class="card-item group relative flex-1 rounded-3xl cursor-pointer overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[#D5BF86]/20 hover:bg-[#3F0D12] shadow-sm hover:shadow-2xl border border-[#D5BF86]/60 flex flex-col justify-between p-6 sm:p-8"
-          >
-            <div
-              class="card-bg absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out bg-[#3F0D12]"
-            ></div>
-
-            <div
-              class="giant-text absolute inset-0 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform scale-90 select-none"
-            >
-              <span
-                class="text-[16vw] font-black leading-none text-[#F1F0CC]/10 tracking-tighter uppercase"
-                >Wayang Klitik</span
-              >
-            </div>
-
-            <div class="relative z-10 flex flex-col justify-between h-full">
-              <div>
-                <span
-                  class="card-number text-xs font-bold tracking-widest text-[#8D775F] group-hover:text-[#A71D31] transition-colors duration-500"
-                  >03</span
-                >
-                <h2
-                  class="card-title text-2xl sm:text-3xl font-extrabold tracking-tight text-[#3F0D12] group-hover:text-[#F1F0CC] transition-colors duration-500 mt-2"
-                >
-                  Wayang Klitik
-                </h2>
-                <p
-                  class="card-subtext text-xs font-medium text-[#8D775F] group-hover:text-[#F1F0CC]/80 transition-colors duration-500 mt-1"
-                >
-                  Subtext
-                </p>
-              </div>
-
-              <div
-                class="image-container relative my-auto py-4 flex justify-center items-center h-44 sm:h-60 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
-              >
-                <img
-                  src=""
-                  alt="Foto wayang Klitik"
-                  class="product-img h-full object-contain filter drop-shadow-xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] opacity-0 group-hover:opacity-100 group-hover:scale-105 transform"
-                />
-              </div>
-
-              <div
-                class="cta-wrapper relative z-10 pt-2 flex items-center justify-between"
-              >
-                <button
-                  class="card-btn px-5 py-2.5 rounded-full text-xs font-bold bg-[#3F0D12] text-[#F1F0CC] group-hover:bg-[#A71D31] transition-all duration-500 flex items-center gap-2 shadow-md"
-                >
-                  <span>View more</span>
-                  <svg
-                    class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform duration-300"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5l7 7-7 7"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div
-            onclick="selectCard(3)"
-            data-index="3"
-            class="card-item group relative flex-1 rounded-3xl cursor-pointer overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[#D5BF86]/20 hover:bg-[#3F0D12] shadow-sm hover:shadow-2xl border border-[#D5BF86]/60 flex flex-col justify-between p-6 sm:p-8"
-          >
-            <div
-              class="card-bg absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out bg-[#3F0D12]"
-            ></div>
-
-            <div
-              class="giant-text absolute inset-0 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform scale-90 select-none"
-            >
-              <span
-                class="text-[16vw] font-black leading-none text-[#F1F0CC]/10 tracking-tighter uppercase"
-                >Wayang Kulit Bali</span
-              >
-            </div>
-
-            <div class="relative z-10 flex flex-col justify-between h-full">
-              <div>
-                <span
-                  class="card-number text-xs font-bold tracking-widest text-[#8D775F] group-hover:text-[#A71D31] transition-colors duration-500"
-                  >04</span
-                >
-                <h2
-                  class="card-title text-2xl sm:text-3xl font-extrabold tracking-tight text-[#3F0D12] group-hover:text-[#F1F0CC] transition-colors duration-500 mt-2"
-                >
-                  Wayang Kulit Bali
-                </h2>
-                <p
-                  class="card-subtext text-xs font-medium text-[#8D775F] group-hover:text-[#F1F0CC]/80 transition-colors duration-500 mt-1"
-                >
-                  Subtext
-                </p>
-              </div>
-
-              <div
-                class="image-container relative my-auto py-4 flex justify-center items-center h-44 sm:h-60 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
-              >
-                <img
-                  src=""
-                  alt="Foto wayang kulit bali "
-                  class="product-img h-full object-contain filter drop-shadow-xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] opacity-0 group-hover:opacity-100 group-hover:scale-105 transform"
-                />
-              </div>
-
-              <div
-                class="cta-wrapper relative z-10 pt-2 flex items-center justify-between"
-              >
-                <button
-                  class="card-btn px-5 py-2.5 rounded-full text-xs font-bold bg-[#3F0D12] text-[#F1F0CC] group-hover:bg-[#A71D31] transition-all duration-500 flex items-center gap-2 shadow-md"
-                >
-                  <span>View more</span>
-                  <svg
-                    class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform duration-300"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5l7 7-7 7"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <footer
-        id="detail-cta"
-        class="relative z-30 pb-8 pt-2 px-8 flex justify-center items-center opacity-0 pointer-events-none transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform translate-y-6"
-      >
-        <button
-          class="px-10 py-4 rounded-full bg-[#A71D31] text-[#F1F0CC] hover:bg-[#3F0D12] font-extrabold text-sm tracking-wide shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-3 group"
-        >
-          <span>CTA Selengkapnya</span>
-          <svg
-            class="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2.5"
-              d="M14 5l7 7m0 0l-7 7m7-7H3"
-            ></path>
-          </svg>
-        </button>
-      </footer>
-    </section>
-
-    <section
-      id="jenis"
-      class="relative overflow-hidden bg-[#fdfaf5] px-0 py-12 md:py-16"
-    >
-      <!-- HEADER -->
-      <div class="mx-auto mb-8 max-w-3xl px-5 text-center md:mb-10">
-        <p
-          class="mb-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[#b66b37]"
-        >
-          Keragaman Daerah
-        </p>
-
-        <h2 class="font-serif text-2xl font-bold text-[#702018] md:text-3xl">
-          Pesona Wayang Nusantara
+        <h2 class="font-wayang mb-2 max-w-xs text-sm font-semibold leading-tight text-[#8a4636]">
+          Mengenal Warisan, Melestarikan Kebudayaan.
         </h2>
 
-        <p
-          class="mx-auto mt-4 max-w-xl text-xs leading-relaxed text-[#89847d] md:text-sm"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Jelajahi
-          beragam jenis wayang Nusantara.
+        <p class="max-w-xs text-xs leading-relaxed text-[#E8DACC]">
+          Jelajahi keindahan seni pewayangan, pahami nilai-nilainya, dan
+          lestarikan budaya Nusantara untuk generasi mendatang.
         </p>
-      </div>
 
-      <!-- CAROUSEL 3D -->
-      <div class="relative w-full">
-        <div
-          id="ragam-jenis-viewport"
-          class="overflow-hidden py-8"
-          tabindex="0"
-          aria-label="Carousel jenis wayang"
-        >
-          <div
-            id="ragam-jenis-track"
-            class="relative flex items-stretch gap-5 will-change-transform md:gap-7"
-          >
-            <!-- WAYANG 1 -->
-            <article
-              class="ragam-jenis-card w-[72vw] shrink-0 rounded-2xl border border-[#eee4d8] bg-[#fdfaf5] p-4 md:w-[min(58vw,680px)] md:p-6"
-              aria-label="Wayang 1"
-            >
-              <h3
-                class="mb-4 text-center font-serif text-xl font-bold text-[#702018] md:text-2xl"
-              >
-                Wayang 1
-              </h3>
+        <div class="mt-5 flex items-center gap-2">
+          <a href="#instagram" aria-label="Instagram"
+            class="flex h-9 w-9 items-center justify-center rounded-full bg-[#e8dacc] text-[9px] text-[#8A4636] transition hover:bg-[#e8dacc]/70">
+            <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/instagram/mono.svg" alt="Instagram"
+              width="20" height="20" />
+          </a>
 
-              <img
-                src=""
-                alt="Wayang 1"
-                class="h-40 w-full rounded-md object-cover md:h-56"
-              />
+          <a href="#facebook" aria-label="Facebook"
+            class="flex h-9 w-9 items-center justify-center rounded-full bg-[#e8dacc] text-[9px] text-[#8A4636] transition hover:bg-[#e8dacc]/70">
+            <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/facebook/mono.svg" alt="Facebook"
+              width="20" height="20" />
+          </a>
 
-              <p
-                class="mt-4 text-center text-[10px] font-semibold text-[#b66b37] md:text-xs"
-              >
-                Lorem ipsum
-              </p>
+          <a href="#x" aria-label="X"
+            class="flex h-9 w-9 items-center justify-center rounded-full bg-[#e8dacc] text-[9px] text-[#8A4636] transition hover:bg-[#e8dacc]/70">
+            <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/x-formerly-twitter/light.svg"
+              alt="X (formerly Twitter)" width="18" height="18" />
+          </a>
 
-              <p
-                class="mt-4 text-sm leading-relaxed tracking-wide text-[#77736e] md:text-base"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </article>
-
-            <!-- WAYANG 2 -->
-            <article
-              class="ragam-jenis-card w-[72vw] shrink-0 rounded-2xl border border-[#eee4d8] bg-[#fdfaf5] p-4 md:w-[min(58vw,680px)] md:p-6"
-              aria-label="Wayang 2"
-            >
-              <h3
-                class="mb-4 text-center font-serif text-xl font-bold text-[#702018] md:text-2xl"
-              >
-                Wayang 2
-              </h3>
-
-              <img
-                src=""
-                alt="Wayang 2"
-                class="h-40 w-full rounded-md object-cover md:h-56"
-              />
-
-              <p
-                class="mt-4 text-center text-[10px] font-semibold text-[#b66b37] md:text-xs"
-              >
-                Lorem ipsum
-              </p>
-
-              <p
-                class="mt-4 text-sm leading-relaxed tracking-wide text-[#77736e] md:text-base"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </article>
-
-            <!-- WAYANG 3 -->
-            <article
-              class="ragam-jenis-card w-[72vw] shrink-0 rounded-2xl border border-[#eee4d8] bg-[#fdfaf5] p-4 md:w-[min(58vw,680px)] md:p-6"
-              aria-label="Wayang 3"
-            >
-              <h3
-                class="mb-4 text-center font-serif text-xl font-bold text-[#702018] md:text-2xl"
-              >
-                Wayang 3
-              </h3>
-
-              <img
-                src=""
-                alt="Wayang 3"
-                class="h-40 w-full rounded-md object-cover md:h-56"
-              />
-
-              <p
-                class="mt-4 text-center text-[10px] font-semibold text-[#b66b37] md:text-xs"
-              >
-                Lorem ipsum
-              </p>
-
-              <p
-                class="mt-4 text-sm leading-relaxed tracking-wide text-[#77736e] md:text-base"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </article>
-
-            <!-- WAYANG 4 -->
-            <article
-              class="ragam-jenis-card w-[72vw] shrink-0 rounded-2xl border border-[#eee4d8] bg-[#fdfaf5] p-4 md:w-[min(58vw,680px)] md:p-6"
-              aria-label="Wayang 4"
-            >
-              <h3
-                class="mb-4 text-center font-serif text-xl font-bold text-[#702018] md:text-2xl"
-              >
-                Wayang 4
-              </h3>
-
-              <img
-                src=""
-                alt="Wayang 4"
-                class="h-40 w-full rounded-md object-cover md:h-56"
-              />
-
-              <p
-                class="mt-4 text-center text-[10px] font-semibold text-[#b66b37] md:text-xs"
-              >
-                Lorem ipsum
-              </p>
-
-              <p
-                class="mt-4 text-sm leading-relaxed tracking-wide text-[#77736e] md:text-base"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </article>
-
-            <!-- WAYANG 5 -->
-            <article
-              class="ragam-jenis-card w-[72vw] shrink-0 rounded-2xl border border-[#eee4d8] bg-[#fdfaf5] p-4 md:w-[min(58vw,680px)] md:p-6"
-              aria-label="Wayang 5"
-            >
-              <h3
-                class="mb-4 text-center font-serif text-xl font-bold text-[#702018] md:text-2xl"
-              >
-                Wayang 5
-              </h3>
-
-              <img
-                src=""
-                alt="Wayang 5"
-                class="h-40 w-full rounded-md object-cover md:h-56"
-              />
-
-              <p
-                class="mt-4 text-center text-[10px] font-semibold text-[#b66b37] md:text-xs"
-              >
-                Lorem ipsum
-              </p>
-
-              <p
-                class="mt-4 text-sm leading-relaxed tracking-wide text-[#77736e] md:text-base"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </article>
-
-            <!-- WAYANG 6 -->
-            <article
-              class="ragam-jenis-card w-[72vw] shrink-0 rounded-2xl border border-[#eee4d8] bg-[#fdfaf5] p-4 md:w-[min(58vw,680px)] md:p-6"
-              aria-label="Wayang 6"
-            >
-              <h3
-                class="mb-4 text-center font-serif text-xl font-bold text-[#702018] md:text-2xl"
-              >
-                Wayang 6
-              </h3>
-
-              <img
-                src=""
-                alt="Wayang 6"
-                class="h-40 w-full rounded-md object-cover md:h-56"
-              />
-
-              <p
-                class="mt-4 text-center text-[10px] font-semibold text-[#b66b37] md:text-xs"
-              >
-                Lorem ipsum
-              </p>
-
-              <p
-                class="mt-4 text-sm leading-relaxed tracking-wide text-[#77736e] md:text-base"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </article>
-
-            <!-- WAYANG 7 -->
-            <article
-              class="ragam-jenis-card w-[72vw] shrink-0 rounded-2xl border border-[#eee4d8] bg-[#fdfaf5] p-4 md:w-[min(58vw,680px)] md:p-6"
-              aria-label="Wayang 7"
-            >
-              <h3
-                class="mb-4 text-center font-serif text-xl font-bold text-[#702018] md:text-2xl"
-              >
-                Wayang 7
-              </h3>
-
-              <img
-                src=""
-                alt="Wayang 7"
-                class="h-40 w-full rounded-md object-cover md:h-56"
-              />
-
-              <p
-                class="mt-4 text-center text-[10px] font-semibold text-[#b66b37] md:text-xs"
-              >
-                Lorem ipsum
-              </p>
-
-              <p
-                class="mt-4 text-sm leading-relaxed tracking-wide text-[#77736e] md:text-base"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </article>
-          </div>
+          <a href="#youtube" aria-label="YouTube"
+            class="flex h-9 w-9 items-center justify-center rounded-full bg-[#e8dacc] text-[9px] text-[#8A4636] transition hover:bg-[#e8dacc]/70">
+            <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/youtube/mono.svg" alt="YouTube"
+              width="20" height="20" />
+          </a>
         </div>
       </div>
+      <div>
+        <h3 class="font-wayang mb-4 text-lg font-bold text-[#e8dacc]">
+          Navigasi
+        </h3>
 
-      <!-- PANAH KIRI DAN KANAN -->
-      <div class="mt-5 flex items-center justify-center gap-5">
-        <button
-          id="ragam-jenis-prev"
-          type="button"
-          aria-label="Wayang sebelumnya"
-          class="flex h-11 w-11 items-center justify-center rounded-full bg-[#dedede] text-[#282828] transition-colors duration-300 hover:bg-[#c9c9c9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#702018]"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.8"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-          >
-            <path d="m15 18-6-6 6-6" />
-          </svg>
-        </button>
+        <ul class="space-y-2.5 text-[10px] text-[#E8DACC]">
+          <li>
+            <a href="#" class="transition hover:text-[#E8DACC] text-sm">
+              Beranda
+            </a>
+          </li>
 
-        <button
-          id="ragam-jenis-next"
-          type="button"
-          aria-label="Wayang berikutnya"
-          class="flex h-11 w-11 items-center justify-center rounded-full bg-[#dedede] text-[#282828] transition-colors duration-300 hover:bg-[#c9c9c9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#702018]"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.8"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-          >
-            <path d="m9 18 6-6-6-6" />
-          </svg>
-        </button>
+          <li>
+            <a href="#about-us" class="transition hover:text-[#E8DACC] text-sm">
+              Tentang Kami
+            </a>
+          </li>
+
+          <li>
+            <a href="pelajari.html" class="transition hover:text-[#E8DACC] text-sm">
+              Pelajari
+            </a>
+          </li>
+
+          <li>
+            <a href="canvas.html" class="transition hover:text-[#E8DACC] text-sm">
+              Studio Kreasi
+            </a>
+          </li>
+
+          <li>
+            <a href="comunity.html" class="transition hover:text-[#E8DACC] text-sm">
+              Komunitas
+            </a>
+          </li>
+        </ul>
       </div>
-    </section>
 
-    <div class="py-4"></div>
-    <script src="../js/ragam-jenis.js"></script>
-  </body>
+      <div>
+        <h3 class="font-wayang mb-2 text-lg font-bold text-[#e8dacc]">
+          Ikuti Berita Terbaru
+        </h3>
+
+        <p class="mb-4 max-w-sm text-xs leading-relaxed text-[#E8DACC]">
+          Dapatkan informasi seputar wayang, kegiatan, dan budaya Nusantara
+          langsung ke email Anda.
+        </p>
+
+        <form id="newsletterForm" class="flex items-center rounded-full border border-[#e8dacc] bg-[#f3ece3] p-1">
+          <div class="flex min-w-0 flex-1 items-center gap-2 pl-2">
+            <i class="fa-regular fa-envelope text-[10px] text-[#E8DACC]"></i>
+
+            <input type="email" id="email" placeholder="Masukkan email Anda" aria-label="Alamat email" required
+              class="w-full min-w-0 bg-transparent text-xs text-[#3F0D12] outline-none placeholder:text-[#3F0D12]" />
+          </div>
+
+          <button type="submit"
+            class="shrink-0 rounded-full bg-[#3F0D12] px-3 py-2 text-xs font-medium text-white transition hover:bg-[#721C24]">
+            Bergabung
+          </button>
+        </form>
+
+        <label class="mt-3 flex cursor-pointer items-center gap-2 leading-relaxed text-[#E8DACC]">
+          <input type="checkbox" id="consent" required class="h-3 w-3 shrink-0 accent-[#3F0D12]" />
+          <span class="text-xs">
+            Saya menyetujui menerima informasi terbaru dari WayangKita.
+          </span>
+        </label>
+
+        <p id="newsletterMessage" class="mt-2 text-[10px] text-[#3F0D12]" role="status"></p>
+      </div>
+    </div>
+
+    <div class="footer-giant-wrap mt-16 border-t pt-8 text-center select-none">
+      <h1 id="footer-giant" aria-label="WayangKita"
+        class="footer-giant uppercase font-display text-5xl sm:text-7xl md:text-[10rem] font-semibold leading-none tracking-tight cursor-pointer">
+        WayangKita
+      </h1>
+    </div>
+
+    <a href="#"
+      class="bg-[#e8dacc] p-3.5 rounded-full absolute bottom-5 right-5 shadow-lg transition hover:bg-[#e8dacc]/80 z-50">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3F0D12"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up preview-icon">
+        <path d="m18 15-6-6-6 6" />
+      </svg>
+    </a>
+  </footer>
+  <script src="../js/ragam-jenis.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/jenis-carousel.js"></script>
+  <script src="../js/hero-scene.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/notifikasi.js"></script>
+  <script src="../js/faq.js"></script>
+  <script src="../js/problem-showcase.js"></script>
+  <script src="../js/footer-giant.js"></script>
+</body>
+
 </html>
